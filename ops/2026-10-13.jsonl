@@ -1,1 +1,2 @@
 {"alerts": [], "at_client": "2026-10-13T03:32:00.942567+00:00", "event": "tick.completed", "mode": "REHEARSAL", "revision": "22a649621083056a5375010495fc3480dd0a9fa5", "watcher": "m7-watcher-v1"}
+{"alerts": ["LEAGUE mode without a valid GO receipt for the pinned protocol: nothing is committed (no GO receipt on the remote)"], "at_client": "2026-10-13T23:32:41.575881+00:00", "event": "tick.completed", "mode": "LEAGUE", "revision": "c1ef0b0d18dd48fe501d250360ff5a59ab526db0", "watcher": "m7-watcher-v1"}
