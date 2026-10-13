@@ -104,7 +104,7 @@ def check_ledgers(root: Path, report: Report) -> dict[str, list[dict]]:
             report.ok("ledger chains")
         versions = []
         for commit in reversed(git(root, "log", "--format=%H", "--", relative).split()):
-            shown = subprocess.run(["git", "show", f"{commit}:{relative}"], cwd=root, capture_output=True)
+            shown = subprocess.run(["git", "cat-file", "blob", f"{commit}:{relative}"], cwd=root, capture_output=True)  # no path stat (long paths)
             versions.append(shown.stdout if shown.returncode == 0 else b"")
         if any(not later.startswith(earlier) for earlier, later in zip(versions, versions[1:])):
             report.fail(f"{relative}: a committed version does not extend the previous one (history rewritten or truncated)")
