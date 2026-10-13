@@ -1,0 +1,8496 @@
+{
+ "anchor": {
+  "diadesorte": {
+   "content_sha256": "09fb215a3ea39650b94dfaaafcb00bfa71580ff76e0c3c74b016a0f4e0ff0488",
+   "last_contest": 1320,
+   "next_contest_at_refresh": 1321,
+   "official_latest_at_refresh": 1320,
+   "outcome_digest": "a7aabdc27b03b0f36c94dc0f5f5e1285d6d6ac0f6e207c1bc2fa335da151e7f6",
+   "snapshot_file": "diadesorte-00001-01320.jsonl"
+  },
+  "duplasena": {
+   "content_sha256": "8852c4fa08189df0b263a7136bd2bc8d7dbec84dfa5495b300550a41a83ca4c9",
+   "last_contest": 3019,
+   "next_contest_at_refresh": 3020,
+   "official_latest_at_refresh": 3019,
+   "outcome_digest": "8facb5a4cb74ea7fbfae93395ef37ac3883d4d117eb48e3a1e60b44271a8f7d6",
+   "snapshot_file": "duplasena-00001-03019.jsonl"
+  },
+  "lotofacil": {
+   "content_sha256": "7b1f73ca37b2eb736a8321a211bd414ca2679104c7d21625988a183adcbe305d",
+   "last_contest": 3802,
+   "next_contest_at_refresh": 3803,
+   "official_latest_at_refresh": 3802,
+   "outcome_digest": "12c8d9912756a116213ea85641b324bd3847b961f2be0e460ecce140b98ced7e",
+   "snapshot_file": "lotofacil-00001-03802.jsonl"
+  },
+  "lotomania": {
+   "content_sha256": "11871e1fcbe813226208ff53a9080d9ecf5c37ed333efbd2a16e1c7853daf966",
+   "last_contest": 2986,
+   "next_contest_at_refresh": 2987,
+   "official_latest_at_refresh": 2986,
+   "outcome_digest": "dd6df6a19a3f9bce24ba4ca96a9a3379bdb5d234b018c1d7ca7f41a056cddbfc",
+   "snapshot_file": "lotomania-00001-02986.jsonl"
+  },
+  "maismilionaria": {
+   "content_sha256": "91246920cf3bcdd3dbc6b7b20d78ee5f1d3c516642e4425bb66c40e057594a36",
+   "last_contest": 397,
+   "next_contest_at_refresh": 398,
+   "official_latest_at_refresh": 397,
+   "outcome_digest": "15acb20aa80615063002cc5a09272cc8ee195b466493b842a2a6b49022f2c5a0",
+   "snapshot_file": "maismilionaria-00001-00397.jsonl"
+  },
+  "megasena": {
+   "content_sha256": "f0573d3443b2cb5b22304d54605a7b37dec65f4c186f38ed29bd109a5983d431",
+   "last_contest": 3069,
+   "next_contest_at_refresh": 3070,
+   "official_latest_at_refresh": 3069,
+   "outcome_digest": "bd2f914489ba7ccc08073bd7e1dfe4604ffc91a393f60260ebf31bbe9dd9589e",
+   "snapshot_file": "megasena-00001-03069.jsonl"
+  },
+  "quina": {
+   "content_sha256": "d51925a3461099ee8469c47058b121fe6d35ce6f3c425ef26e73661775917411",
+   "last_contest": 7140,
+   "next_contest_at_refresh": 7141,
+   "official_latest_at_refresh": 7140,
+   "outcome_digest": "4a3a2f55e329b111a7d7ac9af4650c64a0046aaaa4dd09bf40963dca409002b9",
+   "snapshot_file": "quina-00001-07140.jsonl"
+  },
+  "supersete": {
+   "content_sha256": "05ebb0950a1d9fef97e09d28e224cd70e92782447ebbc8371d7c759cfa570145",
+   "last_contest": 909,
+   "next_contest_at_refresh": 910,
+   "official_latest_at_refresh": 909,
+   "outcome_digest": "82ea2ceba03cc332d77b76be54ba6a12462e0335f85fafd613e8fdb5f707c4da",
+   "snapshot_file": "supersete-00001-00909.jsonl"
+  },
+  "timemania": {
+   "content_sha256": "a5558ed6ed3ad5f52fe3bb676ede1cfd8569508ddad685938f907199b759f3a4",
+   "last_contest": 2453,
+   "next_contest_at_refresh": 2454,
+   "official_latest_at_refresh": 2453,
+   "outcome_digest": "b7aacf8ddfe15ea572f88ecb683582be1341a3080ffa667dffc8a7b56600a899",
+   "snapshot_file": "timemania-00001-02453.jsonl"
+  }
+ },
+ "capability_gating": {
+  "diadesorte": {
+   "auxiliary": {
+    "month": {
+     "fixed_universe": true,
+     "kind": "CATEGORICAL",
+     "m7_policy": "produced by frequency and null bots (fixed legal universe)",
+     "selectable_in_ticket": true,
+     "unverified_regimes": []
+    }
+   },
+   "draws_per_contest": 1,
+   "full_ticket_bots": true,
+   "per_contest_hit_law": [
+    0.13161974843843588,
+    0.35829820408240876,
+    0.33944040386754515,
+    0.14143350161147714,
+    0.02693971459266231,
+    0.0022041584666723712,
+    6.388865120789481e-05,
+    3.802895905231834e-07
+   ],
+   "primary": {
+    "draw_size": 7,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 7
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "duplasena": {
+   "auxiliary": {},
+   "draws_per_contest": 2,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    0.1973361744841589,
+    0.36431293750921645,
+    0.2819922256681916,
+    0.11989973943979058,
+    0.030883998247496956,
+    0.005019058860270304,
+    0.0005203870923555777,
+    3.407915049429e-05,
+    1.3673887238469198e-06,
+    3.1768808828126076e-08,
+    3.883977340823444e-10,
+    2.0909703046155823e-12,
+    3.960171031468906e-15
+   ],
+   "primary": {
+    "draw_size": 6,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 6
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together) — 100 contests = 200 draws"
+  },
+  "lotofacil": {
+   "auxiliary": {},
+   "draws_per_contest": 1,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.000918696998250101,
+    0.015311616637501682,
+    0.08858863911697402,
+    0.2362363709785974,
+    0.32154394938753533,
+    0.23151164355902545,
+    0.08769380437841873,
+    0.01670358178636547,
+    0.0014455022699739351,
+    4.58889609515535e-05,
+    3.0592640634368994e-07
+   ],
+   "primary": {
+    "draw_size": 15,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 15
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "lotomania": {
+   "auxiliary": {},
+   "draws_per_contest": 1,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    8.79303628551999e-08,
+    2.8364633179096745e-06,
+    4.126167732771729e-05,
+    0.0003601019112237146,
+    0.002115598728439323,
+    0.008897603795036239,
+    0.027805011859488245,
+    0.06613083901716124,
+    0.12160243095589846,
+    0.1746086188084696,
+    0.19687121770654945,
+    0.1746086188084696,
+    0.12160243095589846,
+    0.06613083901716124,
+    0.027805011859488245,
+    0.008897603795036239,
+    0.002115598728439323,
+    0.0003601019112237146,
+    4.126167732771729e-05,
+    2.8364633179096745e-06,
+    8.79303628551999e-08
+   ],
+   "primary": {
+    "draw_size": 20,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 50
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "maismilionaria": {
+   "auxiliary": {
+    "trevos": {
+     "fixed_universe": true,
+     "kind": "UNORDERED_SET",
+     "m7_policy": "produced by frequency and null bots (fixed legal universe)",
+     "selectable_in_ticket": true,
+     "unverified_regimes": []
+    }
+   },
+   "draws_per_contest": 1,
+   "full_ticket_bots": true,
+   "per_contest_hit_law": [
+    0.4442253645213867,
+    0.4100541826351262,
+    0.12814193207347693,
+    0.01666886921281001,
+    0.0008929751364005361,
+    1.6613490909777416e-05,
+    6.292988980976294e-08
+   ],
+   "primary": {
+    "draw_size": 6,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 6
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "megasena": {
+   "auxiliary": {},
+   "draws_per_contest": 1,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    0.5158844124284464,
+    0.3790171193351851,
+    0.09475427983379628,
+    0.009908944296344709,
+    0.0004287523974379922,
+    6.4717343009508255e-06,
+    1.997448858318156e-08
+   ],
+   "primary": {
+    "draw_size": 6,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 6
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "quina": {
+   "auxiliary": {},
+   "draws_per_contest": 1,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    0.7179441977076887,
+    0.2527972527139749,
+    0.0280885836348861,
+    0.001154325354858333,
+    1.5598991281869363e-05,
+    4.159731008498497e-08
+   ],
+   "primary": {
+    "draw_size": 5,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 5
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "supersete": {
+   "auxiliary": {},
+   "draws_per_contest": 1,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    0.4782969,
+    0.3720087,
+    0.1240029,
+    0.0229635,
+    0.0025515,
+    0.0001701,
+    6.3e-06,
+    1e-07
+   ],
+   "primary": {
+    "draw_size": 7,
+    "kind": "POSITIONED_DIGITS",
+    "ticket_size": 7
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  },
+  "timemania": {
+   "auxiliary": {
+    "club": {
+     "fixed_universe": false,
+     "kind": "CATEGORICAL",
+     "m7_policy": "NOT produced: no fixed legal universe at every horizon contest (never invented); tickets are PRIMARY_ONLY",
+     "selectable_in_ticket": true,
+     "unverified_regimes": [
+      "clubs-2024-onward"
+     ]
+    }
+   },
+   "draws_per_contest": 1,
+   "full_ticket_bots": false,
+   "per_contest_hit_law": [
+    0.3773628391882889,
+    0.412740605362191,
+    0.171446097611987,
+    0.03463557527514889,
+    0.0036186421929260038,
+    0.00019157517491961195,
+    4.627419684048598e-06,
+    3.7774854563662024e-08
+   ],
+   "primary": {
+    "draw_size": 7,
+    "kind": "UNORDERED_SET",
+    "ticket_size": 10
+   },
+   "support": "FULL_PIPELINE",
+   "unit": "contest (all its draws scored together)"
+  }
+ },
+ "code_identity": {
+  "adaptive_policy": "hedge-v1",
+  "freeze_commit": "the commit that adds this file; behaviour is enforced by the fingerprints, the revision is recorded on every receipt",
+  "generator_kinds": [
+   "frequency-v1",
+   "theory-cold-v1",
+   "arena-temporal-v1",
+   "uniform-null-v1"
+  ],
+  "numpy": "2.5.3",
+  "python": "3.12.6",
+  "scoring_version": "m7-score-v1"
+ },
+ "decision": {
+  "interim": "descriptive only (observed vs exact expectation); no p-value before the game's horizon",
+  "minimum_scored_share": 0.5,
+  "outcomes": [
+   "EXCESS_OVER_FAIR_IN_PROSPECTIVE_TEST",
+   "NO_EXCESS_DEMONSTRATED",
+   "INCONCLUSIVE_INSUFFICIENT_SCORED_CONTESTS",
+   "CONTROL_OK",
+   "CONTROL_ALARM"
+  ],
+  "read": "once per (league, game), when that game's 100 horizon contests have terminal states",
+  "reading": "NO_EXCESS_DEMONSTRATED is not evidence of fairness; EXCESS needs an independent replication cohort"
+ },
+ "excluded_games": {
+  "federal": "NOT_SUPPORTED (pre-numbered tickets)",
+  "loteca": "NOT_SUPPORTED (sports outcomes; domain engine required)"
+ },
+ "frontier_receipt": "evidence/m7/frontier/20261013T020227Z.json",
+ "frozen_on": "2026-10-12",
+ "horizon": {
+  "contests_per_game": 100,
+  "early_stopping": "none",
+  "missing_rule": "a contest with no timely commitment stays in the horizon as MISSED; no replacement, no extension, no selective skipping",
+  "pre_go": "any commitment before the GO receipt is PRE_GO_REHEARSAL and never M7 evidence",
+  "rule_change": "a change of the game's pool, draw size or ticket contract ends the horizon at the last contest under the frozen rules",
+  "special_contests": "included (same draw process), flagged, also reported apart",
+  "start_rule": "first official contest of each game whose result did not exist when the CP6 GO receipt was published; consecutive contest numbers after it"
+ },
+ "isolation": "M8 / M8.x / M9 never change this file, its generators or its policies; anything new is a new cohort with its own pre-registration and later start",
+ "kind": "M7 Prospective Evidence League protocol: what will be committed, scored and decided. Not a result.",
+ "league_rules": {
+  "ADAPTIVE": "the declared Hedge policies only; state updates only after a verified official reveal, each a new immutable version with a receipt binding the previous state; the policy itself (experts, eta, rule) never changes",
+  "FROZEN": "every generator, parameter, seed and scoring rule is fixed by this file; tickets are recomputed from the official history before each target and must equal the committed bytes; no retraining, re-expression or replacement after the first target",
+  "pooling": "never: each league has its own families and report; a FROZEN vs ADAPTIVE contrast is descriptive only"
+ },
+ "leagues": {
+  "ADAPTIVE": {
+   "diadesorte": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "7c52e2e2ad26a65271948953e9fd785de341c85c4714a3eb9692f94541f2ae16",
+       "targets": [
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "trace_sha256": "ab48816cd30b710522137b19e0fa5e36084dafd323d5b2ffd1b133e80256bb50"
+      },
+      "id": "diadesorte.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "diadesorte",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "1ab1f3c643e3f25da0a0765e4a8c763f7f8c0239f1defbf955aa58315ede77eb",
+       "targets": [
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "trace_sha256": "2156eca0bef3cc5757f71ae76b5ef3b1a29ae285f50f2f098923ccd46310a71b"
+      },
+      "id": "diadesorte.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "diadesorte",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "9275e60e27661504c142bcf11e748203a7ae69dc7d886d55cedb5448dc9b92ce",
+       "targets": [
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "trace_sha256": "ff240c979ed271439e2488dbc5cb2b0f05df6f60898df81a46e712a4f16ce61d"
+      },
+      "id": "diadesorte.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "diadesorte",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "diadesorte",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-diadesorte",
+     "members": [
+      "diadesorte.hedge-freq",
+      "diadesorte.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0022638449779195003,
+     "alpha": 0.002777777777777778,
+     "critical_total": 187,
+     "mde_mean_lift": 0.3726277301038059,
+     "mde_relative_lift": 0.2357440741473058,
+     "mean_per_contest": 1.5806451612903223,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.9894342974286873
+    }
+   },
+   "duplasena": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "8ad044110e109c5c4db0fdaa991bb811d9ce0623d8a602caad86c400bbab8818",
+       "targets": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "trace_sha256": "84044b2c1afca1a934bac229af59faf32a934945b3e70a73edfd968f44f79dbd"
+      },
+      "id": "duplasena.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "duplasena",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "1953a2194420111ef7f60180501cde41769976e636b09b79a9d876cb0f9c4c0e",
+       "targets": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "trace_sha256": "0174472795cf9f69d3bfb8a72f57bca33a003cfc9bfd0683e06b6269cce05025"
+      },
+      "id": "duplasena.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "duplasena",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "d80c2339bf8987ffb91f9987c776ef41326da266605e6f504f813c3c5de37ffc",
+       "targets": [
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "trace_sha256": "abf11b794d7275f37de368bc79172661e876807baaecd87b2f4e0334d7df3fc3"
+      },
+      "id": "duplasena.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "duplasena",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "duplasena",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-duplasena",
+     "members": [
+      "duplasena.hedge-freq",
+      "duplasena.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.002570331784069196,
+     "alpha": 0.002777777777777778,
+     "critical_total": 175,
+     "mde_mean_lift": 0.39977751171588494,
+     "mde_relative_lift": 0.2776232720249201,
+     "mean_per_contest": 1.44,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 1.0667210870471344
+    }
+   },
+   "lotofacil": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "bb6d22391b5616962743c9126df8d2cf84234dc304aa4cf7bbd1cd81413504f8",
+       "targets": [
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "trace_sha256": "55d4774adfe5c1213e28c59413f90eb2fc7d97a0a39e3265bb04cf96432eeba2"
+      },
+      "id": "lotofacil.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "lotofacil",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "432bc5f802343a0cef9028bc88c9f9a2681fc6c627f9e16862b905c949b742a8",
+       "targets": [
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "trace_sha256": "fd4fc4fee158a1ea3d92e4ddf7d6b371e0b4a0c45db2cb4473dc0f1eb674787e"
+      },
+      "id": "lotofacil.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "lotofacil",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "470e3f8a7ee9ad4cc445ccdc70a20e86c9ef9531ea758cf5870791395f52096d",
+       "targets": [
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "trace_sha256": "60dbfc2e55ac49a1bfb6460a9769a95e5e6c12b5740958763bfc89afe2c88610"
+      },
+      "id": "lotofacil.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "lotofacil",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "lotofacil",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-lotofacil",
+     "members": [
+      "lotofacil.hedge-freq",
+      "lotofacil.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0024448964281529786,
+     "alpha": 0.002777777777777778,
+     "critical_total": 935,
+     "mde_mean_lift": 0.4530771289472689,
+     "mde_relative_lift": 0.05034190321636321,
+     "mean_per_contest": 9.0,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 1.224744871391589
+    }
+   },
+   "lotomania": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "7300e3313aa7e234629d2ebcb0aad070c2bfbb03fc6aae51db4e672dda2f71a7",
+       "targets": [
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "trace_sha256": "a6724338e4c44d13a0c7cd4343a6a217b673d81838a0082337cfc3624f1ddaa1"
+      },
+      "id": "lotomania.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "lotomania",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "8c66e96213798e23bba3efe5f66b43fb259de205f38af3a43e05147ec1c2cfaf",
+       "targets": [
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "trace_sha256": "b32239e53419178094ffa852198a292aed9804bc1d48d2657b520255dcfc1981"
+      },
+      "id": "lotomania.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "lotomania",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "51c5c24a4e37223fc426c8b6c35530faa595b0f7c71e988ad10af3779a2b0041",
+       "targets": [
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "trace_sha256": "31149063d4b061340e2daa731102e1c834c265b614f54fb6409c58ab50c2adad"
+      },
+      "id": "lotomania.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "lotomania",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "lotomania",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-lotomania",
+     "members": [
+      "lotomania.hedge-freq",
+      "lotomania.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0024654990067462263,
+     "alpha": 0.002777777777777778,
+     "critical_total": 1057,
+     "mde_mean_lift": 0.7391722331731769,
+     "mde_relative_lift": 0.07391722331731769,
+     "mean_per_contest": 10.0,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 2.010075630518424
+    }
+   },
+   "maismilionaria": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "2cffb80c1e52d0c3ecd1f5db8e10ce9ead4d6d1dc5e422dfdce0e3dd30a668ff",
+       "targets": [
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "trace_sha256": "8aaece99f91a883f56012f196602649b22a3713195f12833af15126475d15697"
+      },
+      "id": "maismilionaria.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "maismilionaria",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "c988d05be5381715f3b5a999e5bceaa3d108bb1ec310ef3b65c3f3e4a06d2d30",
+       "targets": [
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "trace_sha256": "8c12e2d25bedb520656fdd82753c02b5413bb528ddb3014049786dd0777b8a63"
+      },
+      "id": "maismilionaria.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "maismilionaria",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "62f5fcfa1dcf8aab77986387664eb8144fa27b24663e6c9adcb2afcd6430bfa8",
+       "targets": [
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "trace_sha256": "fbdc58f5b0c687cb15df918ee8e04148a759d0b21a37024fa9a5f684f6d70ddd"
+      },
+      "id": "maismilionaria.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "maismilionaria",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "maismilionaria",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-maismilionaria",
+     "members": [
+      "maismilionaria.hedge-freq",
+      "maismilionaria.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0019158706110770259,
+     "alpha": 0.002777777777777778,
+     "critical_total": 95,
+     "mde_mean_lift": 0.2934822873323568,
+     "mde_relative_lift": 0.40761428796160665,
+     "mean_per_contest": 0.7200000000000001,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.7542857142857142
+    }
+   },
+   "megasena": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "0948e37fa0bd2a46455ab7d7a5b554625e887848167a9349df6754603d96b1a7",
+       "targets": [
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "trace_sha256": "6001876c164db87ff553fba9bfd89390b86c730369d969f179f7485127319c5c"
+      },
+      "id": "megasena.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "megasena",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "b11374fb2dee06fd7187346f5c33f51744cd05e76cb67c64e929ee92cdc6feaf",
+       "targets": [
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "trace_sha256": "3548d60670498f5c3a38b898bffee0949043925bda7184e30602d4667a2e7973"
+      },
+      "id": "megasena.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "megasena",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "aab2d6293309996467536a83089f6e0a7529c7383e0dfbc19150b65c7d024f8e",
+       "targets": [
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "trace_sha256": "321c73cc68ba1c9d172c1e9d2cbd6dec3f9be56060013a1d646c2e63ac4d5471"
+      },
+      "id": "megasena.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "megasena",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "megasena",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-megasena",
+     "members": [
+      "megasena.hedge-freq",
+      "megasena.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0024429126013921164,
+     "alpha": 0.002777777777777778,
+     "critical_total": 81,
+     "mde_mean_lift": 0.26916766600288544,
+     "mde_relative_lift": 0.44861277667147564,
+     "mean_per_contest": 0.6000000000000001,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.7030201192964489
+    }
+   },
+   "quina": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "751f22b85f7f3936e0f98ec3a712bca97b63033f8b042235a591da3d1a3998ca",
+       "targets": [
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "trace_sha256": "8e6358f6003e70c1b442fd937f942349b2e8ab151095678f7eef717b49b8e211"
+      },
+      "id": "quina.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "quina",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "4b01be584a4c3fa883c6963387e1e915a4e5ca20ad21d5a7eeaae50c0922e238",
+       "targets": [
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "trace_sha256": "1e562f2d1b55d0471cbcf3db46746e241d52ca947cfd659a3631b2512725d104"
+      },
+      "id": "quina.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "quina",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "9f47efab04d0ec54e0dd023e492f989a0d24767a195db8817cb48fae999e1c92",
+       "targets": [
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "trace_sha256": "f34ca9b90462fda8ad63a0eeebb8ecacd80b43c227e2904f97437a4e81235add"
+      },
+      "id": "quina.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "quina",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "quina",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-quina",
+     "members": [
+      "quina.hedge-freq",
+      "quina.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0018088454800284323,
+     "alpha": 0.002777777777777778,
+     "critical_total": 48,
+     "mde_mean_lift": 0.21188583751821818,
+     "mde_relative_lift": 0.6780346800582981,
+     "mean_per_contest": 0.3125,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.5273849535590737
+    }
+   },
+   "supersete": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "7bb026795ee6f3c1e0566e3aed3312dbe24c54b9d2480745a07d1edfc6ef992e",
+       "targets": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "trace_sha256": "d0f3e1a010a392c86d6e4b8142dd647990da78fb6b328b08e0b5a379f6dd6a4e"
+      },
+      "id": "supersete.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "supersete",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "c3bef30d5895d4236ad3d96bb43b289e0e2511b46fe88413e99e3d0f063fdd4e",
+       "targets": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "trace_sha256": "5b053e135e3bd02e699718e04bb366186476078e49249a0527eb4636a9cae929"
+      },
+      "id": "supersete.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "supersete",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "221a0055ccc2531b7a65e813993a1ea2c4da599b5efeb6daf8ba94b0bc7cdd91",
+       "targets": [
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "trace_sha256": "c2d8d36f2a23d265fdcfb10a256d05e92999799e5f317d4cfaee0aa67385fbc0"
+      },
+      "id": "supersete.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "supersete",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "supersete",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-supersete",
+     "members": [
+      "supersete.hedge-freq",
+      "supersete.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0022042059994515136,
+     "alpha": 0.002777777777777778,
+     "critical_total": 94,
+     "mde_mean_lift": 0.30680161446436005,
+     "mde_relative_lift": 0.4382880206633715,
+     "mean_per_contest": 0.7,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.7937253933193772
+    }
+   },
+   "timemania": {
+    "bots": [
+     {
+      "fingerprint": {
+       "final_state_sha256": "79679162f11d015d05603a1f29c9a4564ad82d195577685a29e30c94d12547d8",
+       "targets": [
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "trace_sha256": "c5f4f2056b24c7003daf421d9e4d78dec08db22deab66fb9164e81b1e94c4bb7"
+      },
+      "id": "timemania.hedge-freq",
+      "label": "Hedge over five frequency modes",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "ALL_HISTORY"
+          }
+         },
+         "id": "all_history"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_20"
+          }
+         },
+         "id": "window_20"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_100"
+          }
+         },
+         "id": "window_100"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "WINDOW_500"
+          }
+         },
+         "id": "window_500"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "frequency-v1",
+          "params": {
+           "components": "primary",
+           "mode": "DECAYED"
+          }
+         },
+         "id": "decayed"
+        }
+       ],
+       "game_id": "timemania",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "35db55ed637925b3d27049150036385da69a05a91e367d30d14936c927be8c00",
+       "targets": [
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "trace_sha256": "327c4436178bb0fad93a0bd5f8a3bf3b474a918457b2f6521ed85b86a4a0a432"
+      },
+      "id": "timemania.hedge-native",
+      "label": "Hedge over hot / cold / overdue",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "hot",
+           "seed": 2026,
+           "variant_key": 1099821819,
+           "window": 20
+          }
+         },
+         "id": "hot-w20"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "cold",
+           "seed": 2026,
+           "variant_key": 2080011690,
+           "window": 20
+          }
+         },
+         "id": "cold-w20"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "arena-temporal-v1",
+          "params": {
+           "concept": "overdue",
+           "seed": 2026,
+           "variant_key": 816324390
+          }
+         },
+         "id": "overdue"
+        }
+       ],
+       "game_id": "timemania",
+       "kind": "hedge-v1"
+      },
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "final_state_sha256": "07fbe83166d90b998f6c805f6d8f66979c2e225cbdd1e19788c7d3f778d2e1fe",
+       "targets": [
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "trace_sha256": "dfbd95b7984a87769aa71467973c07954d4653b9f7ca25fede104f72e155cf33"
+      },
+      "id": "timemania.hedge-null",
+      "label": "Hedge over two uniform controls (adaptive negative control)",
+      "policy": {
+       "eta": 0.5,
+       "experts": [
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7101
+          }
+         },
+         "id": "null-7101"
+        },
+        {
+         "generator": {
+          "game_id": "timemania",
+          "kind": "uniform-null-v1",
+          "params": {
+           "seed": 7102
+          }
+         },
+         "id": "null-7102"
+        }
+       ],
+       "game_id": "timemania",
+       "kind": "hedge-v1"
+      },
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 2 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-ADAPTIVE-timemania",
+     "members": [
+      "timemania.hedge-freq",
+      "timemania.hedge-native"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0027689977263370986,
+     "alpha": 0.002777777777777778,
+     "critical_total": 112,
+     "mde_mean_lift": 0.31579011557234615,
+     "mde_relative_lift": 0.3609029892255385,
+     "mean_per_contest": 0.875,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.8411160834407964
+    }
+   }
+  },
+  "FROZEN": {
+   "diadesorte": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         4,
+         6,
+         7,
+         8,
+         10,
+         20,
+         24
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         4,
+         7,
+         8,
+         10,
+         11,
+         20,
+         24
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "44aaacf643d99e3dc4c4f4fe490374886d437bf0fea3558cf21ce75aae1497e8"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "full",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "diadesorte.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         4,
+         6,
+         8,
+         11,
+         12,
+         20,
+         28
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         2,
+         4,
+         6,
+         8,
+         11,
+         27,
+         28
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "4b83a66d66240444a7b07fdd049878e7c6f14c5c1838d3aadf317d216c803f5b"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "full",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "diadesorte.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         4,
+         5,
+         8,
+         20,
+         23,
+         24,
+         30
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         2,
+         7,
+         11,
+         16,
+         25,
+         27,
+         31
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "266c84e54327bb15eb1ac6dbaa6b29f9114308f8aad77b77252dd90ff97aac73"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "diadesorte.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         9,
+         13,
+         19,
+         25,
+         27,
+         28,
+         31
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         14,
+         17,
+         19,
+         20,
+         21,
+         23,
+         30
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "3cbb6af78a11386a23a995ffd3423ad62e3c82103abfae0a571b92a204a4ce26"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "diadesorte.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         11,
+         19,
+         21,
+         22,
+         25,
+         28,
+         31
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         5,
+         8,
+         12,
+         14,
+         21,
+         24,
+         30
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "d12d41759138ca3e8092b9ab3335b1773ec35653b2a875c3aa1de1ebd27ae35c"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "diadesorte.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         11,
+         18,
+         21,
+         23,
+         26,
+         28,
+         30
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         3,
+         11,
+         12,
+         14,
+         15,
+         21,
+         30
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "0c95ea2e41026825a1b9ed4f9b46a5a1a10ae0a9b4137051335e6394ef4cb873"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "full",
+        "seed": 7001
+       }
+      },
+      "id": "diadesorte.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        1291,
+        [
+         1,
+         4,
+         5,
+         7,
+         20,
+         21,
+         30
+        ]
+       ],
+       "last": [
+        1320,
+        [
+         3,
+         6,
+         9,
+         13,
+         18,
+         21,
+         24
+        ]
+       ],
+       "targets": [
+        1291,
+        1292,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301,
+        1302,
+        1303,
+        1304,
+        1305,
+        1306,
+        1307,
+        1308,
+        1309,
+        1310,
+        1311,
+        1312,
+        1313,
+        1314,
+        1315,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320
+       ],
+       "tickets_sha256": "2328f350db104a27dbedea3ae45090b28b244e7439c8ee38b1b5cb296dd34dc7"
+      },
+      "generator": {
+       "game_id": "diadesorte",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "full",
+        "seed": 7002
+       }
+      },
+      "id": "diadesorte.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 5 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-diadesorte",
+     "members": [
+      "diadesorte.freq-all",
+      "diadesorte.freq-w100",
+      "diadesorte.hot-w20",
+      "diadesorte.cold-w20",
+      "diadesorte.overdue"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0008635014827812771,
+     "alpha": 0.0011111111111111111,
+     "critical_total": 190,
+     "mde_mean_lift": 0.4026277301038059,
+     "mde_relative_lift": 0.2547236659840405,
+     "mean_per_contest": 1.5806451612903223,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.9894342974286873
+    }
+   },
+   "duplasena": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         18,
+         30,
+         35,
+         36,
+         39,
+         46
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         18,
+         30,
+         35,
+         36,
+         39,
+         46
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "12061fd81609f8ab81702b2c91f801b5895096e0cd1182bc354be08f37be2ed2"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "duplasena.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         11,
+         12,
+         29,
+         39,
+         42,
+         44
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         5,
+         6,
+         11,
+         18,
+         21,
+         46
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "3b49464430b58d0ae9e3b13ad884ba1d36b68c49d6f72c30e8e0caa7b48ccb51"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "duplasena.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         4,
+         21,
+         36,
+         41,
+         42,
+         44
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         1,
+         5,
+         11,
+         13,
+         18,
+         31
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "612ec19dfa4bd5e74cda0ce79ab975f979b0a05a1501215f56a476d48f5f21bd"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "duplasena.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         10,
+         15,
+         17,
+         23,
+         25,
+         50
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         3,
+         14,
+         32,
+         36,
+         45,
+         47
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "a052fc95c4fe2739c122d4b45acf7002505412b64509981e4d6271aaab33295a"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "duplasena.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         10,
+         17,
+         23,
+         25,
+         26,
+         50
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         3,
+         14,
+         32,
+         36,
+         45,
+         47
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "a0920e51c428e701f2608b4ed6545115e7faf2399c77e45970b4e69a0fd9324f"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "duplasena.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         7,
+         14,
+         19,
+         26,
+         32,
+         44
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         1,
+         8,
+         28,
+         32,
+         35,
+         36
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "455c1b976af9332d3e138fdcda9c67e8adf958db89a2ef7255b9291d9990f698"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "duplasena.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2990,
+        [
+         25,
+         30,
+         40,
+         44,
+         46,
+         50
+        ]
+       ],
+       "last": [
+        3019,
+        [
+         7,
+         10,
+         15,
+         23,
+         26,
+         43
+        ]
+       ],
+       "targets": [
+        2990,
+        2991,
+        2992,
+        2993,
+        2994,
+        2995,
+        2996,
+        2997,
+        2998,
+        2999,
+        3000,
+        3001,
+        3002,
+        3003,
+        3004,
+        3005,
+        3006,
+        3007,
+        3008,
+        3009,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        3019
+       ],
+       "tickets_sha256": "1b70c8e3067aa1c640c32a1261d96a53e045d21c8a4767d243dcf63e12274634"
+      },
+      "generator": {
+       "game_id": "duplasena",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "duplasena.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 5 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-duplasena",
+     "members": [
+      "duplasena.freq-all",
+      "duplasena.freq-w100",
+      "duplasena.hot-w20",
+      "duplasena.cold-w20",
+      "duplasena.overdue"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0010865002690984876,
+     "alpha": 0.0011111111111111111,
+     "critical_total": 178,
+     "mde_mean_lift": 0.42977751171588496,
+     "mde_relative_lift": 0.29845660535825347,
+     "mean_per_contest": 1.44,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 1.0667210870471344
+    }
+   },
+   "lotofacil": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         2,
+         3,
+         4,
+         5,
+         9,
+         10,
+         11,
+         12,
+         13,
+         14,
+         15,
+         20,
+         24,
+         25
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         1,
+         2,
+         3,
+         4,
+         5,
+         9,
+         10,
+         11,
+         12,
+         13,
+         14,
+         15,
+         20,
+         24,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "22913a6810e665760ad8563bec3681ac6ab734a0c97be1c6f57c471a4d386288"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "lotofacil.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         2,
+         3,
+         4,
+         5,
+         9,
+         11,
+         13,
+         14,
+         15,
+         18,
+         21,
+         23,
+         24,
+         25
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         1,
+         3,
+         4,
+         5,
+         6,
+         8,
+         9,
+         11,
+         12,
+         14,
+         15,
+         21,
+         23,
+         24,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "ebdd05d199c7b8f59335683280cf328aeff69c2883379abb19f60cacbbbf12b2"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "lotofacil.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "preregistration": "H2-LOTOFACIL-WINDOW_100",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         2,
+         3,
+         4,
+         5,
+         9,
+         11,
+         13,
+         15,
+         16,
+         17,
+         21,
+         23,
+         24,
+         25
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         1,
+         3,
+         4,
+         6,
+         7,
+         8,
+         11,
+         12,
+         14,
+         15,
+         19,
+         20,
+         23,
+         24,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "dc5b8c1bcc1e38a6d49cbfd81c064cc0fded628b676c6ffe3d674f6e14dcd84e"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "lotofacil.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         6,
+         7,
+         8,
+         10,
+         12,
+         13,
+         14,
+         15,
+         17,
+         18,
+         19,
+         20,
+         22,
+         24
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         2,
+         5,
+         6,
+         9,
+         10,
+         11,
+         13,
+         14,
+         16,
+         17,
+         18,
+         20,
+         21,
+         22,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "931680268a850683acc2be494bf046bd6cf39ea6743baf61e0ffca0fdcff7683"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "lotofacil.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         2,
+         3,
+         4,
+         5,
+         8,
+         10,
+         13,
+         14,
+         16,
+         17,
+         19,
+         21,
+         22,
+         24
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         1,
+         2,
+         4,
+         5,
+         6,
+         10,
+         11,
+         13,
+         14,
+         16,
+         18,
+         19,
+         21,
+         22,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "c16a66983e91593223a0c1c2a6cb33ef27466911cb961f0d28880eca3449b377"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "lotofacil.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         9,
+         11,
+         12,
+         13,
+         15,
+         21,
+         23,
+         24,
+         25
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         1,
+         3,
+         4,
+         5,
+         7,
+         8,
+         9,
+         11,
+         12,
+         13,
+         15,
+         19,
+         23,
+         24,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "4f122ace5d07c59a6ab41522016220f7b85457476c65fd119dd614a004af5876"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "DECAYED"
+       }
+      },
+      "id": "lotofacil.freq-decayed",
+      "label": "frequency, decayed (pre-registered H1)",
+      "preregistration": "H1-LOTOFACIL-DECAYED",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         6,
+         8,
+         10,
+         11,
+         13,
+         14,
+         17,
+         18,
+         19,
+         20,
+         22,
+         23,
+         24,
+         25
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         2,
+         3,
+         4,
+         5,
+         7,
+         9,
+         13,
+         16,
+         17,
+         18,
+         19,
+         20,
+         21,
+         22,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "276704d390aa41691146de2f9fc55f5234d66ef8335fe0f62d263f3691b1d775"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "lotofacil.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3773,
+        [
+         1,
+         3,
+         5,
+         8,
+         11,
+         12,
+         14,
+         15,
+         16,
+         17,
+         19,
+         20,
+         21,
+         23,
+         25
+        ]
+       ],
+       "last": [
+        3802,
+        [
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         10,
+         12,
+         13,
+         14,
+         17,
+         21,
+         24,
+         25
+        ]
+       ],
+       "targets": [
+        3773,
+        3774,
+        3775,
+        3776,
+        3777,
+        3778,
+        3779,
+        3780,
+        3781,
+        3782,
+        3783,
+        3784,
+        3785,
+        3786,
+        3787,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802
+       ],
+       "tickets_sha256": "e03f70ae522646d38a9cc52be3904c9f91d1815892d4869c7691093c39edfcc0"
+      },
+      "generator": {
+       "game_id": "lotofacil",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "lotofacil.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 6 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-lotofacil",
+     "members": [
+      "lotofacil.freq-all",
+      "lotofacil.freq-w100",
+      "lotofacil.hot-w20",
+      "lotofacil.cold-w20",
+      "lotofacil.overdue",
+      "lotofacil.freq-decayed"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0008445047563331108,
+     "alpha": 0.000925925925925926,
+     "critical_total": 939,
+     "mde_mean_lift": 0.49307712894726896,
+     "mde_relative_lift": 0.054786347660807665,
+     "mean_per_contest": 9.0,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 1.224744871391589
+    }
+   },
+   "lotomania": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         0,
+         1,
+         4,
+         5,
+         6,
+         11,
+         12,
+         13,
+         14,
+         17,
+         18,
+         19,
+         20,
+         24,
+         25,
+         26,
+         29,
+         31,
+         38,
+         41,
+         42,
+         43,
+         44,
+         45,
+         47,
+         48,
+         49,
+         51,
+         53,
+         54,
+         61,
+         64,
+         67,
+         68,
+         73,
+         74,
+         76,
+         78,
+         79,
+         82,
+         83,
+         85,
+         86,
+         87,
+         90,
+         91,
+         92,
+         93,
+         95,
+         99
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         0,
+         1,
+         4,
+         5,
+         6,
+         11,
+         12,
+         13,
+         14,
+         17,
+         18,
+         19,
+         20,
+         24,
+         25,
+         26,
+         29,
+         31,
+         38,
+         41,
+         42,
+         43,
+         44,
+         45,
+         47,
+         48,
+         49,
+         51,
+         53,
+         54,
+         61,
+         64,
+         67,
+         68,
+         73,
+         74,
+         76,
+         78,
+         79,
+         82,
+         83,
+         85,
+         86,
+         87,
+         90,
+         91,
+         92,
+         93,
+         95,
+         99
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "998eb56a8dc813e5694d5b0cfe72b5531e6eaa775da449075c8c927499247424"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "lotomania.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         0,
+         1,
+         4,
+         5,
+         6,
+         9,
+         10,
+         11,
+         12,
+         14,
+         17,
+         18,
+         22,
+         23,
+         24,
+         26,
+         27,
+         28,
+         29,
+         30,
+         31,
+         32,
+         36,
+         40,
+         43,
+         45,
+         47,
+         48,
+         53,
+         55,
+         61,
+         67,
+         68,
+         69,
+         72,
+         74,
+         75,
+         76,
+         77,
+         78,
+         80,
+         84,
+         88,
+         89,
+         90,
+         91,
+         93,
+         95,
+         96,
+         99
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         0,
+         2,
+         4,
+         5,
+         6,
+         7,
+         9,
+         10,
+         11,
+         12,
+         13,
+         14,
+         15,
+         16,
+         17,
+         18,
+         20,
+         21,
+         23,
+         25,
+         26,
+         27,
+         29,
+         31,
+         36,
+         38,
+         43,
+         47,
+         48,
+         53,
+         61,
+         63,
+         64,
+         65,
+         68,
+         69,
+         72,
+         74,
+         75,
+         76,
+         77,
+         78,
+         79,
+         84,
+         88,
+         89,
+         91,
+         93,
+         95,
+         96
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "73139bb6083a71d2a9b3a86ee1f6288c84d7836b684fe87f583b93bc7ed8e85c"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "lotomania.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         0,
+         1,
+         3,
+         5,
+         7,
+         9,
+         10,
+         11,
+         12,
+         13,
+         14,
+         15,
+         17,
+         18,
+         20,
+         21,
+         23,
+         26,
+         29,
+         30,
+         32,
+         35,
+         36,
+         39,
+         40,
+         42,
+         46,
+         48,
+         53,
+         54,
+         59,
+         63,
+         64,
+         65,
+         67,
+         68,
+         69,
+         70,
+         74,
+         78,
+         80,
+         81,
+         84,
+         85,
+         88,
+         89,
+         91,
+         95,
+         96,
+         98
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         2,
+         3,
+         4,
+         6,
+         7,
+         10,
+         12,
+         13,
+         15,
+         16,
+         17,
+         20,
+         21,
+         22,
+         23,
+         25,
+         26,
+         28,
+         29,
+         30,
+         33,
+         34,
+         36,
+         38,
+         41,
+         43,
+         44,
+         46,
+         47,
+         48,
+         50,
+         56,
+         59,
+         63,
+         65,
+         68,
+         73,
+         76,
+         77,
+         79,
+         80,
+         84,
+         86,
+         90,
+         91,
+         92,
+         95,
+         96,
+         98,
+         99
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "1cbc4cd58911353493f1402e40a0204e710656d3a0563551ca3b183e940439f0"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "lotomania.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         1,
+         2,
+         4,
+         6,
+         8,
+         16,
+         19,
+         22,
+         25,
+         27,
+         28,
+         31,
+         33,
+         34,
+         36,
+         38,
+         39,
+         41,
+         43,
+         44,
+         45,
+         47,
+         49,
+         50,
+         52,
+         55,
+         56,
+         57,
+         58,
+         60,
+         61,
+         62,
+         66,
+         69,
+         71,
+         72,
+         73,
+         75,
+         76,
+         79,
+         82,
+         83,
+         86,
+         87,
+         88,
+         92,
+         93,
+         94,
+         97,
+         99
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         0,
+         1,
+         5,
+         8,
+         9,
+         11,
+         14,
+         15,
+         18,
+         19,
+         24,
+         27,
+         28,
+         32,
+         35,
+         37,
+         39,
+         40,
+         42,
+         45,
+         48,
+         49,
+         50,
+         51,
+         52,
+         54,
+         55,
+         57,
+         58,
+         61,
+         62,
+         64,
+         66,
+         67,
+         69,
+         72,
+         74,
+         75,
+         77,
+         78,
+         81,
+         82,
+         83,
+         84,
+         87,
+         88,
+         89,
+         93,
+         94,
+         99
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "3099efb01af20265a108f6a0c4d29b521fe64f90bf1eb5f16bc280ccf9d486bd"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "lotomania.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         1,
+         2,
+         4,
+         6,
+         9,
+         11,
+         13,
+         14,
+         15,
+         19,
+         24,
+         25,
+         26,
+         27,
+         28,
+         33,
+         34,
+         38,
+         39,
+         41,
+         44,
+         45,
+         50,
+         51,
+         52,
+         54,
+         55,
+         56,
+         57,
+         58,
+         60,
+         61,
+         65,
+         67,
+         68,
+         70,
+         72,
+         76,
+         77,
+         82,
+         83,
+         86,
+         88,
+         91,
+         92,
+         94,
+         95,
+         96,
+         97,
+         98
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         0,
+         1,
+         4,
+         9,
+         15,
+         17,
+         18,
+         19,
+         24,
+         27,
+         30,
+         33,
+         34,
+         35,
+         37,
+         38,
+         40,
+         42,
+         43,
+         44,
+         45,
+         46,
+         47,
+         49,
+         51,
+         54,
+         55,
+         56,
+         58,
+         60,
+         61,
+         62,
+         67,
+         69,
+         71,
+         72,
+         75,
+         77,
+         81,
+         83,
+         84,
+         85,
+         87,
+         88,
+         89,
+         92,
+         93,
+         94,
+         96,
+         97
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "9330381fe713e11ff24f1a8451fa586c1e58fa3dd026a0c80e2cb9151ab345e9"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "lotomania.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         1,
+         2,
+         3,
+         5,
+         9,
+         11,
+         18,
+         19,
+         20,
+         21,
+         22,
+         23,
+         24,
+         27,
+         30,
+         32,
+         33,
+         34,
+         35,
+         36,
+         38,
+         39,
+         40,
+         41,
+         43,
+         44,
+         47,
+         48,
+         49,
+         50,
+         58,
+         59,
+         61,
+         62,
+         63,
+         64,
+         67,
+         70,
+         71,
+         72,
+         79,
+         81,
+         82,
+         85,
+         89,
+         90,
+         91,
+         92,
+         97,
+         99
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         0,
+         2,
+         3,
+         4,
+         8,
+         10,
+         11,
+         17,
+         18,
+         19,
+         21,
+         22,
+         27,
+         28,
+         29,
+         33,
+         34,
+         35,
+         36,
+         37,
+         38,
+         41,
+         45,
+         46,
+         47,
+         48,
+         49,
+         50,
+         52,
+         55,
+         56,
+         60,
+         61,
+         64,
+         71,
+         73,
+         77,
+         78,
+         79,
+         83,
+         86,
+         87,
+         88,
+         90,
+         91,
+         92,
+         94,
+         95,
+         97,
+         99
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "ff99973dea53284d12f29886f708cd39f2e958e3d1b95ae01f307de20ee047d9"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "lotomania.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2957,
+        [
+         3,
+         4,
+         6,
+         7,
+         8,
+         11,
+         12,
+         17,
+         18,
+         19,
+         20,
+         23,
+         25,
+         26,
+         27,
+         28,
+         31,
+         32,
+         33,
+         37,
+         39,
+         40,
+         43,
+         45,
+         46,
+         48,
+         49,
+         50,
+         53,
+         58,
+         59,
+         60,
+         62,
+         63,
+         64,
+         65,
+         70,
+         73,
+         75,
+         77,
+         80,
+         81,
+         82,
+         84,
+         88,
+         91,
+         93,
+         95,
+         96,
+         98
+        ]
+       ],
+       "last": [
+        2986,
+        [
+         0,
+         2,
+         3,
+         4,
+         6,
+         7,
+         10,
+         13,
+         14,
+         18,
+         21,
+         23,
+         24,
+         27,
+         28,
+         29,
+         31,
+         32,
+         33,
+         36,
+         39,
+         43,
+         44,
+         47,
+         51,
+         56,
+         58,
+         60,
+         61,
+         62,
+         63,
+         64,
+         65,
+         66,
+         67,
+         68,
+         70,
+         73,
+         74,
+         76,
+         78,
+         83,
+         84,
+         85,
+         88,
+         89,
+         92,
+         93,
+         96,
+         99
+        ]
+       ],
+       "targets": [
+        2957,
+        2958,
+        2959,
+        2960,
+        2961,
+        2962,
+        2963,
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        2979,
+        2980,
+        2981,
+        2982,
+        2983,
+        2984,
+        2985,
+        2986
+       ],
+       "tickets_sha256": "e73c0d5de6365e73538d70d0a046d134cd5dc610f77e93f59e950967444bae62"
+      },
+      "generator": {
+       "game_id": "lotomania",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "lotomania.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 5 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-lotomania",
+     "members": [
+      "lotomania.freq-all",
+      "lotomania.freq-w100",
+      "lotomania.hot-w20",
+      "lotomania.cold-w20",
+      "lotomania.overdue"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0011050755366055097,
+     "alpha": 0.0011111111111111111,
+     "critical_total": 1062,
+     "mde_mean_lift": 0.789172233173177,
+     "mde_relative_lift": 0.0789172233173177,
+     "mean_per_contest": 10.0,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 2.010075630518424
+    }
+   },
+   "maismilionaria": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         15,
+         21,
+         25,
+         40,
+         41,
+         50
+        ]
+       ],
+       "last": [
+        397,
+        [
+         10,
+         15,
+         21,
+         40,
+         41,
+         50
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "9deb7a4b873ba87282d754bb91d0913e638d6417fbb9414c3ec8b9c381a3fed2"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "full",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "maismilionaria.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         1,
+         4,
+         10,
+         12,
+         18,
+         29
+        ]
+       ],
+       "last": [
+        397,
+        [
+         1,
+         4,
+         10,
+         12,
+         14,
+         40
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "823737eeda8bc0a77e5c87f811741df3119470dcc6bc3c58453219d8e0d07246"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "full",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "maismilionaria.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         1,
+         6,
+         7,
+         10,
+         12,
+         22
+        ]
+       ],
+       "last": [
+        397,
+        [
+         14,
+         17,
+         21,
+         28,
+         32,
+         46
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "d71ccf9de72150859eee87921d2f0dfd910e5f90058171e101512a62fae32f97"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "maismilionaria.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         2,
+         16,
+         17,
+         39,
+         46,
+         50
+        ]
+       ],
+       "last": [
+        397,
+        [
+         6,
+         20,
+         22,
+         24,
+         25,
+         36
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "651dd48486d7baa988cc441838953f892fea853bdad26c4f923196b96d5ff4ba"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "maismilionaria.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         2,
+         26,
+         39,
+         43,
+         46,
+         50
+        ]
+       ],
+       "last": [
+        397,
+        [
+         7,
+         20,
+         22,
+         24,
+         25,
+         36
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "d4be2839471be51326f39b37235726a6a8853f38d3250f9d4082e6c0517a187d"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "maismilionaria.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         13,
+         14,
+         20,
+         21,
+         35,
+         39
+        ]
+       ],
+       "last": [
+        397,
+        [
+         30,
+         34,
+         38,
+         41,
+         43,
+         47
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "460a9bff1cd42235978ba1f64eadfd09d2ed3614e3390fb470e3fd5c1347b52b"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "full",
+        "seed": 7001
+       }
+      },
+      "id": "maismilionaria.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        368,
+        [
+         3,
+         8,
+         14,
+         16,
+         43,
+         49
+        ]
+       ],
+       "last": [
+        397,
+        [
+         10,
+         25,
+         27,
+         29,
+         34,
+         48
+        ]
+       ],
+       "targets": [
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397
+       ],
+       "tickets_sha256": "5bca7bc06b75c9512126d8b13df225aae9f14cf8393a1f4201f7397a2249dbe1"
+      },
+      "generator": {
+       "game_id": "maismilionaria",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "full",
+        "seed": 7002
+       }
+      },
+      "id": "maismilionaria.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 5 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-maismilionaria",
+     "members": [
+      "maismilionaria.freq-all",
+      "maismilionaria.freq-w100",
+      "maismilionaria.hot-w20",
+      "maismilionaria.cold-w20",
+      "maismilionaria.overdue"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0008481982488778378,
+     "alpha": 0.0011111111111111111,
+     "critical_total": 97,
+     "mde_mean_lift": 0.31348228733235683,
+     "mde_relative_lift": 0.43539206573938444,
+     "mean_per_contest": 0.7200000000000001,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.7542857142857142
+    }
+   },
+   "megasena": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         5,
+         10,
+         27,
+         32,
+         37,
+         53
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         5,
+         10,
+         27,
+         33,
+         37,
+         53
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "9b2b78c74e59b74d892e9b3987b276df54365332734b8d3ca2c49657de6f7ff8"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "megasena.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         6,
+         27,
+         30,
+         42,
+         58,
+         60
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         6,
+         14,
+         17,
+         27,
+         43,
+         58
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "c323800e50bb901fe9016daafc75313114dc0bdce18ab99c398298beb14d6424"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "megasena.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         11,
+         16,
+         22,
+         30,
+         39,
+         58
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         1,
+         11,
+         25,
+         38,
+         43,
+         48
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "678ed951f59b90436d6a5e40143ec9442b2227eb636afbd1f22a9e9720397c75"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "megasena.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         4,
+         26,
+         36,
+         41,
+         52,
+         57
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         22,
+         26,
+         34,
+         42,
+         44,
+         46
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "0a653c49ea2127d0a029dabf048c0657cfc42b729131e9a1e697c78b214659a0"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "megasena.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         4,
+         26,
+         36,
+         41,
+         52,
+         57
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         12,
+         19,
+         32,
+         34,
+         45,
+         59
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "f77b0da3addb4c67884ed48c0f8cda37e83e0029369af392d5eeb54273152a2f"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "megasena.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         10,
+         11,
+         14,
+         27,
+         32,
+         46
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         10,
+         11,
+         14,
+         27,
+         43,
+         46
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "9adf85c44aa30b6f44f07514a6ad3d0e82c2f0e9d65b36d323d2fe6cb5e7e9d5"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_500"
+       }
+      },
+      "id": "megasena.freq-w500",
+      "label": "frequency, last 500 draws (pre-registered H3)",
+      "preregistration": "H3-MEGASENA-WINDOW_500",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         8,
+         22,
+         30,
+         43,
+         52,
+         57
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         2,
+         7,
+         8,
+         12,
+         20,
+         26
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "05046afe0e1b132657ec29db73fc73eed39235f053fc7620f9702a8c788f1f2f"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "megasena.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        3040,
+        [
+         6,
+         12,
+         13,
+         15,
+         43,
+         48
+        ]
+       ],
+       "last": [
+        3069,
+        [
+         2,
+         10,
+         25,
+         31,
+         35,
+         41
+        ]
+       ],
+       "targets": [
+        3040,
+        3041,
+        3042,
+        3043,
+        3044,
+        3045,
+        3046,
+        3047,
+        3048,
+        3049,
+        3050,
+        3051,
+        3052,
+        3053,
+        3054,
+        3055,
+        3056,
+        3057,
+        3058,
+        3059,
+        3060,
+        3061,
+        3062,
+        3063,
+        3064,
+        3065,
+        3066,
+        3067,
+        3068,
+        3069
+       ],
+       "tickets_sha256": "de25f365bc071428dff35f569ffa01309f434bb2e534d91361dcd1397e5fb13e"
+      },
+      "generator": {
+       "game_id": "megasena",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "megasena.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 6 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-megasena",
+     "members": [
+      "megasena.freq-all",
+      "megasena.freq-w100",
+      "megasena.hot-w20",
+      "megasena.cold-w20",
+      "megasena.overdue",
+      "megasena.freq-w500"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0006699398754389907,
+     "alpha": 0.000925925925925926,
+     "critical_total": 84,
+     "mde_mean_lift": 0.2991676660028854,
+     "mde_relative_lift": 0.49861277667147563,
+     "mean_per_contest": 0.6000000000000001,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.7030201192964489
+    }
+   },
+   "quina": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         4,
+         26,
+         44,
+         49,
+         52
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         4,
+         26,
+         44,
+         49,
+         52
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "8e5cc161e5bf928ecfe75e91c8a4674e1b2e7c1e852e386d026e107e51e22f12"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "quina.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         2,
+         14,
+         16,
+         29,
+         55
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         2,
+         14,
+         34,
+         54,
+         61
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "8883865d4e28c380927cc1e06a7d0c0ed24fdfdc8982da779478c0c26f292ac9"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "quina.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         33,
+         42,
+         47,
+         59,
+         61
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         14,
+         22,
+         23,
+         51,
+         60
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "f691c41a8304c766eb7ff5350757ab2f32fd80eef8bb2e7dced4adda7f785935"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "quina.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         1,
+         8,
+         22,
+         31,
+         60
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         3,
+         5,
+         9,
+         20,
+         48
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "599f26a91ad367eac3f21453dd4c8785eb30dedaacfec8f976cadbb29bac1ac2"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "quina.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         12,
+         37,
+         44,
+         60,
+         79
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         25,
+         45,
+         55,
+         56,
+         65
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "91ea2667cbdb3524740bf2cb6914e5f553c194392c768a0e91969b3c939b8fbc"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "quina.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         26,
+         42,
+         56,
+         57,
+         66
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         14,
+         26,
+         29,
+         42,
+         57
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "1740c7f1aa5487606a37fdf07cb9a77652c93eedcbb0daaad024d4abd30d826a"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_500"
+       }
+      },
+      "id": "quina.freq-w500",
+      "label": "frequency, last 500 draws (pre-registered H4)",
+      "preregistration": "H4-QUINA-WINDOW_500",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         3,
+         6,
+         15,
+         50,
+         72
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         24,
+         29,
+         42,
+         64,
+         71
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "9eda27c294fd8779dcb220233d531c4a0b4faed491959be3ddc44438881dca22"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "theory-cold-v1",
+       "params": {
+        "seed": 2026,
+        "variant_key": 3345089031,
+        "window": 10
+       }
+      },
+      "id": "quina.cold-w10-e1",
+      "label": "native theory cold w10 (pre-registered EXPLORATORY E1)",
+      "preregistration": "E1-QUINA-THEORY-COLD-W10",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         10,
+         45,
+         50,
+         73,
+         76
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         18,
+         36,
+         65,
+         73,
+         78
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "1bd7837fce1205e82d54eee714ecbc6729b31690377582cae6ac79243b031bf9"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "quina.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        7111,
+        [
+         16,
+         31,
+         55,
+         60,
+         67
+        ]
+       ],
+       "last": [
+        7140,
+        [
+         24,
+         26,
+         33,
+         55,
+         61
+        ]
+       ],
+       "targets": [
+        7111,
+        7112,
+        7113,
+        7114,
+        7115,
+        7116,
+        7117,
+        7118,
+        7119,
+        7120,
+        7121,
+        7122,
+        7123,
+        7124,
+        7125,
+        7126,
+        7127,
+        7128,
+        7129,
+        7130,
+        7131,
+        7132,
+        7133,
+        7134,
+        7135,
+        7136,
+        7137,
+        7138,
+        7139,
+        7140
+       ],
+       "tickets_sha256": "142da61f290864bd9bc07a17d7f35efeb29005fe4e573a4f65c6c4caf642af6a"
+      },
+      "generator": {
+       "game_id": "quina",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "quina.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 7 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-quina",
+     "members": [
+      "quina.freq-all",
+      "quina.freq-w100",
+      "quina.hot-w20",
+      "quina.cold-w20",
+      "quina.overdue",
+      "quina.freq-w500",
+      "quina.cold-w10-e1"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0005916284141396283,
+     "alpha": 0.0007936507936507937,
+     "critical_total": 50,
+     "mde_mean_lift": 0.23188583751821817,
+     "mde_relative_lift": 0.7420346800582982,
+     "mean_per_contest": 0.3125,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.5273849535590737
+    }
+   },
+   "supersete": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         0,
+         15,
+         25,
+         39,
+         43,
+         56,
+         63
+        ]
+       ],
+       "last": [
+        909,
+        [
+         0,
+         15,
+         25,
+         39,
+         43,
+         54,
+         63
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "5a06efed8ede11dff53f607ca1af8aae06f13eac24b11b853e6af4f1dd5de2be"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "supersete.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         5,
+         15,
+         24,
+         35,
+         47,
+         56,
+         63
+        ]
+       ],
+       "last": [
+        909,
+        [
+         1,
+         15,
+         24,
+         35,
+         46,
+         54,
+         65
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "7340c6b60968f82bd1977e759dbccbf6cafab53c4450c2ceab7062202200efaf"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "supersete.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         5,
+         15,
+         25,
+         35,
+         46,
+         56,
+         62
+        ]
+       ],
+       "last": [
+        909,
+        [
+         3,
+         18,
+         29,
+         35,
+         45,
+         54,
+         61
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "bc8326a3a4ebe074fe4edb4edb231f0639016aa1e42e4a870da2f462fcbfe827"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "supersete.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         4,
+         16,
+         22,
+         32,
+         42,
+         53,
+         64
+        ]
+       ],
+       "last": [
+        909,
+        [
+         2,
+         17,
+         27,
+         34,
+         49,
+         58,
+         68
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "d6f39a91e4c4b4d429b02a65af4a4929b68ad22c77a1c57055299106a19bca00"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "supersete.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         2,
+         16,
+         22,
+         32,
+         42,
+         53,
+         64
+        ]
+       ],
+       "last": [
+        909,
+        [
+         2,
+         17,
+         27,
+         34,
+         49,
+         58,
+         64
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "d463f573487d27b904e0f89a805992174ead1c2298d3915cb6f1a22df38107a7"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "supersete.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         8,
+         10,
+         21,
+         31,
+         42,
+         57,
+         63
+        ]
+       ],
+       "last": [
+        909,
+        [
+         2,
+         16,
+         26,
+         36,
+         43,
+         53,
+         66
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "116b4b8bde9491e39b0435b7e8b405e1a3f8da2e2d0f432862fbdbce520807aa"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "supersete.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        880,
+        [
+         6,
+         14,
+         28,
+         32,
+         47,
+         54,
+         67
+        ]
+       ],
+       "last": [
+        909,
+        [
+         8,
+         13,
+         28,
+         33,
+         43,
+         55,
+         64
+        ]
+       ],
+       "targets": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909
+       ],
+       "tickets_sha256": "b6fbc4e7633f64f679a0998224a45a2d34f2b352ebb77b1a19975a4b3f3658ee"
+      },
+      "generator": {
+       "game_id": "supersete",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "supersete.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 5 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-supersete",
+     "members": [
+      "supersete.freq-all",
+      "supersete.freq-w100",
+      "supersete.hot-w20",
+      "supersete.cold-w20",
+      "supersete.overdue"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0010424627326219857,
+     "alpha": 0.0011111111111111111,
+     "critical_total": 96,
+     "mde_mean_lift": 0.32680161446436007,
+     "mde_relative_lift": 0.4668594492348001,
+     "mean_per_contest": 0.7,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.7937253933193772
+    }
+   },
+   "timemania": {
+    "bots": [
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         12,
+         20,
+         21,
+         35,
+         61,
+         66,
+         70,
+         71,
+         72,
+         80
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         12,
+         20,
+         21,
+         35,
+         61,
+         66,
+         70,
+         71,
+         72,
+         80
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "576727b68664c1e8890918750c5af31a7d8694d8e479e49794110d4c4cf80d9d"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "ALL_HISTORY"
+       }
+      },
+      "id": "timemania.freq-all",
+      "label": "frequency, all history",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         10,
+         21,
+         22,
+         26,
+         35,
+         36,
+         42,
+         52,
+         56,
+         71
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         10,
+         21,
+         22,
+         26,
+         36,
+         51,
+         52,
+         56,
+         76,
+         80
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "2afc9c8dbb430e9413b282833a1bb290223870f66fa04ac5571c0e5333eb74ef"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "frequency-v1",
+       "params": {
+        "components": "primary",
+        "mode": "WINDOW_100"
+       }
+      },
+      "id": "timemania.freq-w100",
+      "label": "frequency, last 100 draws (hot)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         7,
+         8,
+         12,
+         19,
+         26,
+         36,
+         52,
+         56,
+         76,
+         80
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         1,
+         7,
+         10,
+         20,
+         30,
+         38,
+         40,
+         42,
+         62,
+         80
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "0b4edb6a01f53d85d27b792294fc471c9645781d309292c4bd883f2a45bbf5c7"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "hot",
+        "seed": 2026,
+        "variant_key": 1099821819,
+        "window": 20
+       }
+      },
+      "id": "timemania.hot-w20",
+      "label": "native theory: hot (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         3,
+         13,
+         27,
+         33,
+         38,
+         39,
+         41,
+         54,
+         61,
+         62
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         3,
+         35,
+         37,
+         41,
+         43,
+         48,
+         59,
+         61,
+         63,
+         71
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "d8a2bc40701fdd6c2d88f4542565ef38be4111412275e176b5f4d468303d81ff"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "cold",
+        "seed": 2026,
+        "variant_key": 2080011690,
+        "window": 20
+       }
+      },
+      "id": "timemania.cold-w20",
+      "label": "native theory: cold (last 20 draws)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         3,
+         27,
+         33,
+         39,
+         40,
+         41,
+         54,
+         55,
+         61,
+         62
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         3,
+         35,
+         37,
+         41,
+         48,
+         55,
+         59,
+         61,
+         63,
+         71
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "3082b1959f9438ea45ade05ad75fbd2f9b8f389c5a2c8f61c97f505ca96c6654"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "arena-temporal-v1",
+       "params": {
+        "concept": "overdue",
+        "seed": 2026,
+        "variant_key": 816324390
+       }
+      },
+      "id": "timemania.overdue",
+      "label": "native theory: overdue (longest delay)",
+      "role": "CANDIDATE"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         1,
+         3,
+         11,
+         23,
+         31,
+         32,
+         33,
+         36,
+         39,
+         48
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         15,
+         26,
+         27,
+         51,
+         52,
+         53,
+         64,
+         65,
+         74,
+         76
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "6b1715ce2accc916bc39073539b24a4b00cbe6f70de1df57f930869ef7b57714"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7001
+       }
+      },
+      "id": "timemania.null-a",
+      "label": "uniform legal ticket, seed 7001",
+      "role": "NEGATIVE_CONTROL"
+     },
+     {
+      "fingerprint": {
+       "first": [
+        2424,
+        [
+         1,
+         21,
+         22,
+         23,
+         35,
+         36,
+         38,
+         42,
+         43,
+         77
+        ]
+       ],
+       "last": [
+        2453,
+        [
+         3,
+         10,
+         17,
+         54,
+         55,
+         61,
+         66,
+         72,
+         75,
+         79
+        ]
+       ],
+       "targets": [
+        2424,
+        2425,
+        2426,
+        2427,
+        2428,
+        2429,
+        2430,
+        2431,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439,
+        2440,
+        2441,
+        2442,
+        2443,
+        2444,
+        2445,
+        2446,
+        2447,
+        2448,
+        2449,
+        2450,
+        2451,
+        2452,
+        2453
+       ],
+       "tickets_sha256": "d92994dbd1f24a35ab76ee22f4f1879b3059cef2a60bf586a1f2e6fa1e198ccd"
+      },
+      "generator": {
+       "game_id": "timemania",
+       "kind": "uniform-null-v1",
+       "params": {
+        "components": "primary",
+        "seed": 7002
+       }
+      },
+      "id": "timemania.null-b",
+      "label": "uniform legal ticket, seed 7002",
+      "role": "NEGATIVE_CONTROL"
+     }
+    ],
+    "family": {
+     "alpha": 0.005555555555555556,
+     "correction": "Holm over the 5 candidate bots at alpha 0.05/9 (Bonferroni across the nine games)",
+     "id": "M7-FROZEN-timemania",
+     "members": [
+      "timemania.freq-all",
+      "timemania.freq-w100",
+      "timemania.hot-w20",
+      "timemania.cold-w20",
+      "timemania.overdue"
+     ]
+    },
+    "power": {
+     "achieved_size": 0.0009424668451852245,
+     "alpha": 0.0011111111111111111,
+     "critical_total": 115,
+     "mde_mean_lift": 0.3457901155723462,
+     "mde_relative_lift": 0.3951887035112528,
+     "mean_per_contest": 0.875,
+     "method": "exact critical value; power by normal approximation of a constant mean shift",
+     "n": 100,
+     "power": 0.8,
+     "sd_per_contest": 0.8411160834407964
+    }
+   }
+  }
+ },
+ "metrics": {
+  "not_used": "simulated ROI or prize money as evidence; log loss (no probabilistic bot in cohort 1)",
+  "primary": "per bot and game: S_same = sum over scored horizon contests of primary hits (all draws of the contest); exact null = n-fold convolution of the per-contest hit law (any past-only ticket, adaptive or frozen, has this law under the fair draw); one-sided",
+  "scored_contest": "a contest is scored for a bot only with PROSPECTIVE_LIVE timing for that commitment (both checks; CP3 receipts)",
+  "secondary": [
+   "paired per-contest difference of each bot vs its league's first negative control (descriptive, with its SD)",
+   "prize-tier counts: FULL_TICKET bots on the official tiers; PRIMARY_ONLY bots only on tiers that need no absent component",
+   "the M7-HYPOTHESES-v1 S_replay statistics, decided only by that file's rule"
+  ]
+ },
+ "power_reading": "the per-game minimum detectable mean lift at 80 % power (Bonferroni bound of each Holm family) is recorded per league and game; 100 contests detect only large effects (relative lift about 5 % in Lotofacil and Lotomania, 25-75 % in the small-ticket games)",
+ "preregistration": {
+  "canonical_sha256": "a2b169669ccaf251e5fed7036a4a2186baeef066a79980e0928e53d608bc5e0e",
+  "protocol_id": "M7-HYPOTHESES-v1",
+  "relation": "referenced unchanged; its S_replay families stay separate from the cohort families below"
+ },
+ "protocol_id": "M7-PROTOCOL-v1",
+ "publication": "commitments are published under the CP3 publication contract (docs/M7_PUBLICATION_ANCHOR.md); the GO receipt names its identity",
+ "selection_criteria": [
+  "rule-based producers that DrawLab can execute for every game without fitted parameters: two frequency modes and the three native temporal rules of the Theory Arena",
+  "the pre-registered generators of M7-HYPOTHESES-v1 in their games (same bytes as the hypotheses, a second declared statistic)",
+  "two seeded uniform negative controls per game in FROZEN and one adaptive negative control (Hedge over uniform experts) in ADAPTIVE",
+  "excluded from cohort 1: fitted models (logistic, pool champion, neural) — a prospective walk-forward artifact freeze exists only for v2 Lotofacil; they may join only as a NEW cohort with its own pre-registration and a later first target",
+  "excluded: M8 / M8.x / M9 research (signal injection, set-native or temporal deep models, optimizers, regulatory genome, other lotteries)",
+  "chosen after M2-M6 retrospective inspection (the hypotheses were selected as M6 extremes); no bot was chosen with any horizon data"
+ ],
+ "status": "FROZEN"
+}

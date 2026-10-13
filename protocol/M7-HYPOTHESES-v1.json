@@ -1,0 +1,1392 @@
+{
+ "anchor": {
+  "lotofacil": {
+   "draws": 3791,
+   "last_contest": 3791,
+   "outcome_digest": "0f4500605fe1d86e1b0bde538b740f819c6d75092eb2f3b71badd2c5bf791e00",
+   "snapshot_file": "lotofacil-00001-03791.jsonl",
+   "source": "CAIXA official results API (health-gated M5/M6 snapshot)"
+  },
+  "megasena": {
+   "draws": 3063,
+   "last_contest": 3063,
+   "outcome_digest": "4e0f1059265eb6df0d7f0e228c91b3b2f7c61a1bcda6f5947e45719f49e59241",
+   "snapshot_file": "megasena-00001-03063.jsonl",
+   "source": "CAIXA official results API (health-gated M5/M6 snapshot)"
+  },
+  "quina": {
+   "draws": 7129,
+   "last_contest": 7129,
+   "outcome_digest": "dd6519190803ecc0186eb948b6ef65f5c4108f1ebc9164b52bb3635975f3cfd6",
+   "snapshot_file": "quina-00001-07129.jsonl",
+   "source": "CAIXA official results API (health-gated M5/M6 snapshot)"
+  }
+ },
+ "claim_boundary": "No hypothesis here is evidence of predictability. Each was selected because it was extreme among hundreds of retrospective replay analyses (winner's curse: a smaller prospective effect is expected). A null result means 'no excess demonstrated at the stated sensitivity', never 'the draws are fair'. A supported result means 'excess over the fair draw in this horizon', which would itself need an independent replication cohort.",
+ "code_identity": {
+  "freeze_commit": "the commit that adds this file (recorded by git; every M7 receipt records its own code revision)",
+  "generator_modules": "drawlab.league.generators (frequency-v1 = drawlab.tickets_intel.frequency at frequency-ticket-lab-v1; theory-cold-v1 = the drawlab.theories.arena cold rule at theory-arena-v1), equality with the M6 paths tested"
+ },
+ "decision": {
+  "interim": "descriptive only (observed counts next to exact expectations); no p-value is computed or shown before the horizon",
+  "minimum_eligible_pair_share": 0.5,
+  "nominal_pairs": 4950,
+  "outcomes": [
+   "SUPPORTED_IN_PROSPECTIVE_TEST",
+   "NOT_SUPPORTED",
+   "INCONCLUSIVE_INSUFFICIENT_PROSPECTIVE_PAIRS",
+   "EXPLORATORY_EXCESS",
+   "NO_EXPLORATORY_EXCESS"
+  ],
+  "rule": "read once, when all 100 horizon contests of a game have a terminal state: Holm over the confirmatory family on the S_replay p-values; a member with fewer than 50 % of the nominal pairs eligible is INCONCLUSIVE_INSUFFICIENT_PROSPECTIVE_PAIRS and still counts in the family size; the exploratory member reports EXPLORATORY_EXCESS or NO_EXPLORATORY_EXCESS"
+ },
+ "eligibility": {
+  "S_replay_pair": "pair (c_i, c_j) is eligible when the commitment of the ticket for c_i was published while the official latest contest was < c_j on both checks, and the ticket recomputed from the frozen generator and the official history < c_i equals the committed bytes (so a late commitment for c_i still counts against c_j only if c_j did not exist yet)",
+  "S_same_target": "PROSPECTIVE_LIVE timing for c_i: both official checks around the published commitment saw the latest official contest < c_i",
+  "integrity": "a committed ticket that differs from the recomputed frozen ticket is a CONFLICT and makes all its pairs ineligible"
+ },
+ "families": {
+  "M7-EXPLORATORY-v1": {
+   "alpha": 0.05,
+   "correction": "none (single exploratory candidate; never SUPPORTED)",
+   "members": [
+    "E1-QUINA-THEORY-COLD-W10"
+   ],
+   "sided": "one-sided (greater)",
+   "type": "exploratory"
+  },
+  "M7-FREQ-REPLAY-v1": {
+   "alpha": 0.05,
+   "correction": "Holm step-down over the 4 members (family-wise error 0.05)",
+   "members": [
+    "H1-LOTOFACIL-DECAYED",
+    "H2-LOTOFACIL-WINDOW_100",
+    "H3-MEGASENA-WINDOW_500",
+    "H4-QUINA-WINDOW_500"
+   ],
+   "sided": "one-sided (greater)",
+   "type": "confirmatory"
+  }
+ },
+ "frozen_on": "2026-10-12",
+ "horizon": {
+  "contests_per_game": 100,
+  "early_stopping": "none",
+  "history_rule": "the ticket for contest c uses every official draw of contests < c (CAIXA results API, health-gated, governed corrections applied) and nothing else",
+  "missing_rule": "a contest without a timely commitment stays in the horizon as MISSED (no replacement, no extension); its pairs are not eligible",
+  "nominal_pairs": 4950,
+  "rule_change": "a change of the game's number pool or draw size ends the horizon at the last contest under the frozen rules",
+  "special_contests": "included (same draw process), flagged, and also reported separately; prize structure is irrelevant to primary hits",
+  "start_rule": "the first official contest of the game whose result did not exist when the M7 league start receipt (the CP6 GO receipt) was published; then every consecutive official contest number until 100 contests have a terminal state; no discretion"
+ },
+ "hypotheses": [
+  {
+   "component": "numbers (primary); the single-component ticket is FULL_TICKET; no auxiliary is modelled or invented",
+   "direction": "greater (an excess of prize events / hits over the fair draw)",
+   "family": "M7-FREQ-REPLAY-v1",
+   "fingerprint": {
+    "first": [
+     3742,
+     [
+      1,
+      2,
+      3,
+      5,
+      6,
+      10,
+      11,
+      13,
+      14,
+      15,
+      18,
+      20,
+      22,
+      23,
+      25
+     ]
+    ],
+    "last": [
+     3791,
+     [
+      1,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      12,
+      15,
+      16,
+      17,
+      21,
+      23,
+      24,
+      25
+     ]
+    ],
+    "targets": [
+     3742,
+     3743,
+     3744,
+     3745,
+     3746,
+     3747,
+     3748,
+     3749,
+     3750,
+     3751,
+     3752,
+     3753,
+     3754,
+     3755,
+     3756,
+     3757,
+     3758,
+     3759,
+     3760,
+     3761,
+     3762,
+     3763,
+     3764,
+     3765,
+     3766,
+     3767,
+     3768,
+     3769,
+     3770,
+     3771,
+     3772,
+     3773,
+     3774,
+     3775,
+     3776,
+     3777,
+     3778,
+     3779,
+     3780,
+     3781,
+     3782,
+     3783,
+     3784,
+     3785,
+     3786,
+     3787,
+     3788,
+     3789,
+     3790,
+     3791
+    ],
+    "tickets_sha256": "420648ee2dd89edaa5f14186b9594ae8cfb6f23ae2911f003424bc410c6c2078"
+   },
+   "game": "lotofacil",
+   "generator": {
+    "game_id": "lotofacil",
+    "kind": "frequency-v1",
+    "params": {
+     "mode": "DECAYED"
+    }
+   },
+   "id": "H1-LOTOFACIL-DECAYED",
+   "m6_implied_delta_rough": 0.06109646233983335,
+   "m6_origin": {
+    "null_reference": 722071,
+    "null_reference_kind": "median of 200 relabelling replicates (M6.x, candidate 51ded45)",
+    "rank": "<= 1/201 (compute cap)",
+    "real": 744269,
+    "same_contest_z_m6": 0.55,
+    "statistic": "retrospective future-replay prize events, ticket for t vs every later draw",
+    "status_in_m6": "EXPLORATORY ANOMALY"
+   },
+   "m6_relative_excess": 0.03074212923659858,
+   "minimum_detectable_delta_at_80pct": {
+    "replay": 0.5,
+    "same": 0.3
+   },
+   "monte_carlo": {
+    "replicates": 9999,
+    "seed": 202610121
+   },
+   "null_constants": {
+    "expected_S_replay_at_nominal_pairs": 524.1509624444743,
+    "hit_mean": 9.0,
+    "hit_sd": 1.224744871391589,
+    "prize_min_hits": 11,
+    "prize_probability_per_pair": 0.10588908332211602
+   },
+   "power": {
+    "achieved_size": {
+     "replay": 0.0125,
+     "same": 0.0125
+    },
+    "alpha_per_test": 0.0125,
+    "alt_worlds": 400,
+    "alternative": "persistent_bias",
+    "alternative_text": "persistent bias: weight 1+delta on a fixed random set of bias_cells cells; Plackett-Luce k-of-N draws",
+    "alternative_window": null,
+    "bias_cells": 15,
+    "critical_value": {
+     "replay": 777,
+     "same": 927
+    },
+    "generator": {
+     "game_id": "lotofacil",
+     "kind": "frequency-v1",
+     "params": {
+      "mode": "DECAYED"
+     }
+    },
+    "horizon_contests": 100,
+    "null_mean": {
+     "replay": 521.74,
+     "same": 899.767
+    },
+    "null_sd": {
+     "replay": 100.34269643757926,
+     "same": 12.008572517454082
+    },
+    "null_worlds": 2000,
+    "pre_horizon_contests": 600,
+    "rows": [
+     {
+      "delta": 0.02,
+      "mean_replay": 527.705,
+      "mean_same": 899.4225,
+      "power_replay": 0.0125,
+      "power_replay_mc_se": 0.0055551215108222435,
+      "power_same": 0.01,
+      "power_same_mc_se": 0.0049749371855331,
+      "relative_excess_replay": 0.011432897611837411,
+      "relative_excess_same": -0.00038287690035310185
+     },
+     {
+      "delta": 0.05,
+      "mean_replay": 526.5925,
+      "mean_same": 900.4975,
+      "power_replay": 0.01,
+      "power_replay_mc_se": 0.0049749371855331,
+      "power_same": 0.0125,
+      "power_same_mc_se": 0.0055551215108222435,
+      "relative_excess_replay": 0.009300609498984036,
+      "relative_excess_same": 0.0008118768525628983
+     },
+     {
+      "delta": 0.1,
+      "mean_replay": 577.0,
+      "mean_same": 906.3375,
+      "power_replay": 0.035,
+      "power_replay_mc_se": 0.009188987974744553,
+      "power_same": 0.06,
+      "power_same_mc_se": 0.011874342087037916,
+      "relative_excess_replay": 0.10591482347529424,
+      "relative_excess_same": 0.007302446077706692
+     },
+     {
+      "delta": 0.2,
+      "mean_replay": 730.9775,
+      "mean_same": 923.6825,
+      "power_replay": 0.355,
+      "power_replay_mc_se": 0.02392566613492715,
+      "power_same": 0.4075,
+      "power_same_mc_se": 0.024568463016639848,
+      "relative_excess_replay": 0.4010378732702111,
+      "relative_excess_same": 0.026579658956151997
+     },
+     {
+      "delta": 0.3,
+      "mean_replay": 952.82,
+      "mean_same": 945.1525,
+      "power_replay": 0.7925,
+      "power_replay_mc_se": 0.02027583228871259,
+      "power_same": 0.9,
+      "power_same_mc_se": 0.015,
+      "relative_excess_replay": 0.8262352896078506,
+      "relative_excess_same": 0.050441392049275
+     },
+     {
+      "delta": 0.5,
+      "mean_replay": 1462.7175,
+      "mean_same": 984.14,
+      "power_replay": 1.0,
+      "power_replay_mc_se": 0.0,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 1.8035372024379956,
+      "relative_excess_same": 0.09377205432072966
+     },
+     {
+      "delta": 1.0,
+      "mean_replay": 2495.905,
+      "mean_same": 1049.4575,
+      "power_replay": 1.0,
+      "power_replay_mc_se": 0.0,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 3.783809943650094,
+      "relative_excess_same": 0.1663658480473278
+     },
+     {
+      "delta": 2.0,
+      "mean_replay": 3763.9275,
+      "mean_same": 1130.58,
+      "power_replay": 1.0,
+      "power_replay_mc_se": 0.0,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 6.214182351362747,
+      "relative_excess_same": 0.2565253004388912
+     }
+    ],
+    "seed": 202611121,
+    "version": "m7-power-v1"
+   },
+   "primary_statistic": "S_replay",
+   "producer_identity": {
+    "identity": "frequency:DECAYED",
+    "producer_kind": "frequency",
+    "producer_version": "frequency-ticket-lab-v1"
+   },
+   "secondary_statistic": "S_same"
+  },
+  {
+   "component": "numbers (primary); the single-component ticket is FULL_TICKET; no auxiliary is modelled or invented",
+   "direction": "greater (an excess of prize events / hits over the fair draw)",
+   "family": "M7-FREQ-REPLAY-v1",
+   "fingerprint": {
+    "first": [
+     3742,
+     [
+      1,
+      2,
+      3,
+      5,
+      6,
+      10,
+      11,
+      12,
+      13,
+      15,
+      18,
+      20,
+      23,
+      24,
+      25
+     ]
+    ],
+    "last": [
+     3791,
+     [
+      1,
+      3,
+      5,
+      6,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      21,
+      23,
+      24,
+      25
+     ]
+    ],
+    "targets": [
+     3742,
+     3743,
+     3744,
+     3745,
+     3746,
+     3747,
+     3748,
+     3749,
+     3750,
+     3751,
+     3752,
+     3753,
+     3754,
+     3755,
+     3756,
+     3757,
+     3758,
+     3759,
+     3760,
+     3761,
+     3762,
+     3763,
+     3764,
+     3765,
+     3766,
+     3767,
+     3768,
+     3769,
+     3770,
+     3771,
+     3772,
+     3773,
+     3774,
+     3775,
+     3776,
+     3777,
+     3778,
+     3779,
+     3780,
+     3781,
+     3782,
+     3783,
+     3784,
+     3785,
+     3786,
+     3787,
+     3788,
+     3789,
+     3790,
+     3791
+    ],
+    "tickets_sha256": "372c57e64bf4280685cfd36325c4e5e3d3c3822e54545847c7d62c94d036ca5b"
+   },
+   "game": "lotofacil",
+   "generator": {
+    "game_id": "lotofacil",
+    "kind": "frequency-v1",
+    "params": {
+     "mode": "WINDOW_100"
+    }
+   },
+   "id": "H2-LOTOFACIL-WINDOW_100",
+   "m6_implied_delta_rough": 0.05394027279394016,
+   "m6_origin": {
+    "null_reference": 721242,
+    "null_reference_kind": "median of 200 relabelling replicates (M6.x)",
+    "rank": "<= 1/201 (compute cap)",
+    "real": 745961,
+    "same_contest_z_m6": 0.85,
+    "statistic": "retrospective future-replay prize events",
+    "status_in_m6": "EXPLORATORY ANOMALY"
+   },
+   "m6_relative_excess": 0.034272823823349174,
+   "minimum_detectable_delta_at_80pct": {
+    "replay": 0.5,
+    "same": 0.3
+   },
+   "monte_carlo": {
+    "replicates": 9999,
+    "seed": 202610122
+   },
+   "null_constants": {
+    "expected_S_replay_at_nominal_pairs": 524.1509624444743,
+    "hit_mean": 9.0,
+    "hit_sd": 1.224744871391589,
+    "prize_min_hits": 11,
+    "prize_probability_per_pair": 0.10588908332211602
+   },
+   "power": {
+    "achieved_size": {
+     "replay": 0.0125,
+     "same": 0.0125
+    },
+    "alpha_per_test": 0.0125,
+    "alt_worlds": 400,
+    "alternative": "persistent_bias",
+    "alternative_text": "persistent bias: weight 1+delta on a fixed random set of bias_cells cells; Plackett-Luce k-of-N draws",
+    "alternative_window": null,
+    "bias_cells": 15,
+    "critical_value": {
+     "replay": 784,
+     "same": 927
+    },
+    "generator": {
+     "game_id": "lotofacil",
+     "kind": "frequency-v1",
+     "params": {
+      "mode": "WINDOW_100"
+     }
+    },
+    "horizon_contests": 100,
+    "null_mean": {
+     "replay": 525.89,
+     "same": 900.089
+    },
+    "null_sd": {
+     "replay": 102.96174756058858,
+     "same": 12.10931033124303
+    },
+    "null_worlds": 2000,
+    "pre_horizon_contests": 600,
+    "rows": [
+     {
+      "delta": 0.02,
+      "mean_replay": 522.3475,
+      "mean_same": 899.9975,
+      "power_replay": 0.0075,
+      "power_replay_mc_se": 0.00431385848168435,
+      "power_same": 0.0075,
+      "power_same_mc_se": 0.00431385848168435,
+      "relative_excess_replay": -0.006736199585464675,
+      "relative_excess_same": -0.00010165661395722392
+     },
+     {
+      "delta": 0.05,
+      "mean_replay": 541.0925,
+      "mean_same": 901.5175,
+      "power_replay": 0.025,
+      "power_replay_mc_se": 0.007806247497997998,
+      "power_same": 0.0225,
+      "power_same_mc_se": 0.007415144974981945,
+      "relative_excess_replay": 0.02890813668257608,
+      "relative_excess_same": 0.0015870652791001305
+     },
+     {
+      "delta": 0.1,
+      "mean_replay": 576.8925,
+      "mean_same": 905.22,
+      "power_replay": 0.045,
+      "power_replay_mc_se": 0.01036520622081394,
+      "power_same": 0.055,
+      "power_same_mc_se": 0.011399013115177999,
+      "relative_excess_replay": 0.09698320941641803,
+      "relative_excess_same": 0.0057005473903135595
+     },
+     {
+      "delta": 0.2,
+      "mean_replay": 693.12,
+      "mean_same": 920.3625,
+      "power_replay": 0.2475,
+      "power_replay_mc_se": 0.021577983571223702,
+      "power_same": 0.31,
+      "power_same_mc_se": 0.023124662159694356,
+      "relative_excess_replay": 0.3179942573541996,
+      "relative_excess_same": 0.02252388374927361
+     },
+     {
+      "delta": 0.3,
+      "mean_replay": 887.0325,
+      "mean_same": 939.9075,
+      "power_replay": 0.715,
+      "power_replay_mc_se": 0.02257072218605333,
+      "power_same": 0.82,
+      "power_same_mc_se": 0.01920937271229855,
+      "relative_excess_replay": 0.6867263115860733,
+      "relative_excess_same": 0.044238403091249934
+     },
+     {
+      "delta": 0.5,
+      "mean_replay": 1385.6075,
+      "mean_same": 977.95,
+      "power_replay": 0.9975,
+      "power_replay_mc_se": 0.002496873044429746,
+      "power_same": 0.9975,
+      "power_same_mc_se": 0.002496873044429746,
+      "relative_excess_replay": 1.63478579170549,
+      "relative_excess_same": 0.08650366797061171
+     },
+     {
+      "delta": 1.0,
+      "mean_replay": 2479.035,
+      "mean_same": 1048.895,
+      "power_replay": 1.0,
+      "power_replay_mc_se": 0.0,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 3.713980109908916,
+      "relative_excess_same": 0.16532365132781313
+     },
+     {
+      "delta": 2.0,
+      "mean_replay": 3782.895,
+      "mean_same": 1130.82,
+      "power_replay": 1.0,
+      "power_replay_mc_se": 0.0,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 6.193319895795699,
+      "relative_excess_same": 0.2563424283598621
+     }
+    ],
+    "seed": 202611122,
+    "version": "m7-power-v1"
+   },
+   "primary_statistic": "S_replay",
+   "producer_identity": {
+    "identity": "frequency:WINDOW_100",
+    "producer_kind": "frequency",
+    "producer_version": "frequency-ticket-lab-v1"
+   },
+   "secondary_statistic": "S_same"
+  },
+  {
+   "component": "numbers (primary); the single-component ticket is FULL_TICKET; no auxiliary is modelled or invented",
+   "direction": "greater (an excess of prize events / hits over the fair draw)",
+   "family": "M7-FREQ-REPLAY-v1",
+   "fingerprint": {
+    "first": [
+     3014,
+     [
+      10,
+      14,
+      27,
+      32,
+      38,
+      46
+     ]
+    ],
+    "last": [
+     3063,
+     [
+      10,
+      11,
+      14,
+      27,
+      32,
+      46
+     ]
+    ],
+    "targets": [
+     3014,
+     3015,
+     3016,
+     3017,
+     3018,
+     3019,
+     3020,
+     3021,
+     3022,
+     3023,
+     3024,
+     3025,
+     3026,
+     3027,
+     3028,
+     3029,
+     3030,
+     3031,
+     3032,
+     3033,
+     3034,
+     3035,
+     3036,
+     3037,
+     3038,
+     3039,
+     3040,
+     3041,
+     3042,
+     3043,
+     3044,
+     3045,
+     3046,
+     3047,
+     3048,
+     3049,
+     3050,
+     3051,
+     3052,
+     3053,
+     3054,
+     3055,
+     3056,
+     3057,
+     3058,
+     3059,
+     3060,
+     3061,
+     3062,
+     3063
+    ],
+    "tickets_sha256": "c041818dfa27b34617d77f13c482baa0e197f41c02bff80ff8089d3506099f1e"
+   },
+   "game": "megasena",
+   "generator": {
+    "game_id": "megasena",
+    "kind": "frequency-v1",
+    "params": {
+     "mode": "WINDOW_500"
+    }
+   },
+   "id": "H3-MEGASENA-WINDOW_500",
+   "m6_implied_delta_rough": 0.25510638148829007,
+   "m6_origin": {
+    "null_reference": 1889,
+    "null_reference_kind": "median of 200 relabelling replicates (M6.x)",
+    "rank": "<= 1/201 (compute cap)",
+    "real": 2957,
+    "same_contest_z_m6": 0.24,
+    "statistic": "retrospective future-replay prize events",
+    "status_in_m6": "EXPLORATORY ANOMALY"
+   },
+   "m6_relative_excess": 0.5653785071466384,
+   "minimum_detectable_delta_at_80pct": {
+    "replay": null,
+    "same": 1.0
+   },
+   "monte_carlo": {
+    "replicates": 9999,
+    "seed": 202610123
+   },
+   "null_constants": {
+    "expected_S_replay_at_nominal_pairs": 2.1544583258262544,
+    "hit_mean": 0.6000000000000001,
+    "hit_sd": 0.7030201192964488,
+    "prize_min_hits": 4,
+    "prize_probability_per_pair": 0.0004352441062275262
+   },
+   "power": {
+    "achieved_size": {
+     "replay": 0.012,
+     "same": 0.0115
+    },
+    "alpha_per_test": 0.0125,
+    "alt_worlds": 400,
+    "alternative": "persistent_bias",
+    "alternative_text": "persistent bias: weight 1+delta on a fixed random set of bias_cells cells; Plackett-Luce k-of-N draws",
+    "alternative_window": null,
+    "bias_cells": 6,
+    "critical_value": {
+     "replay": 35,
+     "same": 76
+    },
+    "generator": {
+     "game_id": "megasena",
+     "kind": "frequency-v1",
+     "params": {
+      "mode": "WINDOW_500"
+     }
+    },
+    "horizon_contests": 100,
+    "null_mean": {
+     "replay": 2.0195,
+     "same": 59.9275
+    },
+    "null_sd": {
+     "replay": 7.049536703491012,
+     "same": 7.0325651249112555
+    },
+    "null_worlds": 2000,
+    "pre_horizon_contests": 600,
+    "rows": [
+     {
+      "delta": 0.02,
+      "mean_replay": 1.855,
+      "mean_same": 59.6825,
+      "power_replay": 0.0025,
+      "power_replay_mc_se": 0.0024968730444297725,
+      "power_same": 0.0275,
+      "power_same_mc_se": 0.008176758220713145,
+      "relative_excess_replay": -0.08145580589254764,
+      "relative_excess_same": -0.0040882733302741725
+     },
+     {
+      "delta": 0.05,
+      "mean_replay": 2.285,
+      "mean_same": 60.1675,
+      "power_replay": 0.015,
+      "power_replay_mc_se": 0.006077622890571609,
+      "power_same": 0.015,
+      "power_same_mc_se": 0.006077622890571609,
+      "relative_excess_replay": 0.1314681851943551,
+      "relative_excess_same": 0.004004839180676623
+     },
+     {
+      "delta": 0.1,
+      "mean_replay": 2.125,
+      "mean_same": 60.365,
+      "power_replay": 0.02,
+      "power_replay_mc_se": 0.007,
+      "power_same": 0.0125,
+      "power_same_mc_se": 0.0055551215108222435,
+      "relative_excess_replay": 0.05224065362713559,
+      "relative_excess_same": 0.007300488089775126
+     },
+     {
+      "delta": 0.2,
+      "mean_replay": 2.4325,
+      "mean_same": 63.9675,
+      "power_replay": 0.015,
+      "power_replay_mc_se": 0.006077622890571609,
+      "power_same": 0.0525,
+      "power_same_mc_se": 0.01115165346484547,
+      "relative_excess_replay": 0.20450606585788567,
+      "relative_excess_same": 0.06741479287472352
+     },
+     {
+      "delta": 0.3,
+      "mean_replay": 3.755,
+      "mean_same": 68.0575,
+      "power_replay": 0.0475,
+      "power_replay_mc_se": 0.010635289135702893,
+      "power_same": 0.2,
+      "power_same_mc_se": 0.02,
+      "relative_excess_replay": 0.8593711314681853,
+      "relative_excess_same": 0.13566392724542164
+     },
+     {
+      "delta": 0.5,
+      "mean_replay": 6.925,
+      "mean_same": 80.3775,
+      "power_replay": 0.08,
+      "power_replay_mc_se": 0.013564659966250536,
+      "power_same": 0.7325,
+      "power_same_mc_se": 0.02213276699827656,
+      "relative_excess_replay": 2.429066600643724,
+      "relative_excess_same": 0.34124567185348953
+     },
+     {
+      "delta": 1.0,
+      "mean_replay": 23.1775,
+      "mean_same": 105.0725,
+      "power_replay": 0.245,
+      "power_replay_mc_se": 0.02150436002302789,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 10.476850705620203,
+      "relative_excess_same": 0.7533269367151976
+     },
+     {
+      "delta": 2.0,
+      "mean_replay": 74.8175,
+      "mean_same": 141.295,
+      "power_replay": 0.6525,
+      "power_replay_mc_se": 0.023808808769024966,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 36.04753651894033,
+      "relative_excess_same": 1.3577656334737807
+     }
+    ],
+    "seed": 202611123,
+    "version": "m7-power-v1"
+   },
+   "primary_statistic": "S_replay",
+   "producer_identity": {
+    "identity": "frequency:WINDOW_500",
+    "producer_kind": "frequency",
+    "producer_version": "frequency-ticket-lab-v1"
+   },
+   "secondary_statistic": "S_same"
+  },
+  {
+   "component": "numbers (primary); the single-component ticket is FULL_TICKET; no auxiliary is modelled or invented",
+   "direction": "greater (an excess of prize events / hits over the fair draw)",
+   "family": "M7-FREQ-REPLAY-v1",
+   "fingerprint": {
+    "first": [
+     7080,
+     [
+      25,
+      26,
+      44,
+      56,
+      57
+     ]
+    ],
+    "last": [
+     7129,
+     [
+      14,
+      26,
+      42,
+      57,
+      66
+     ]
+    ],
+    "targets": [
+     7080,
+     7081,
+     7082,
+     7083,
+     7084,
+     7085,
+     7086,
+     7087,
+     7088,
+     7089,
+     7090,
+     7091,
+     7092,
+     7093,
+     7094,
+     7095,
+     7096,
+     7097,
+     7098,
+     7099,
+     7100,
+     7101,
+     7102,
+     7103,
+     7104,
+     7105,
+     7106,
+     7107,
+     7108,
+     7109,
+     7110,
+     7111,
+     7112,
+     7113,
+     7114,
+     7115,
+     7116,
+     7117,
+     7118,
+     7119,
+     7120,
+     7121,
+     7122,
+     7123,
+     7124,
+     7125,
+     7126,
+     7127,
+     7128,
+     7129
+    ],
+    "tickets_sha256": "731ebba21f632a7f4cc97622a0682abd9a16b55ccbd89c126d80e6349737d5b7"
+   },
+   "game": "quina",
+   "generator": {
+    "game_id": "quina",
+    "kind": "frequency-v1",
+    "params": {
+     "mode": "WINDOW_500"
+    }
+   },
+   "id": "H4-QUINA-WINDOW_500",
+   "m6_implied_delta_rough": 0.0073474910073034454,
+   "m6_origin": {
+    "null_reference": 721329,
+    "null_reference_kind": "median of 20 relabelling replicates (M6.x; compute cap 24.7 M pairs per world)",
+    "rank": "<= 1/21 (unresolved)",
+    "real": 746277,
+    "same_contest_z_m6": -1.6,
+    "statistic": "retrospective future-replay prize events",
+    "status_in_m6": "EXPLORATORY ANOMALY"
+   },
+   "m6_relative_excess": 0.03458615971352885,
+   "minimum_detectable_delta_at_80pct": {
+    "replay": 2.0,
+    "same": 1.0
+   },
+   "monte_carlo": {
+    "replicates": 9999,
+    "seed": 202610124
+   },
+   "null_constants": {
+    "expected_S_replay_at_nominal_pairs": 144.8298204127651,
+    "hit_mean": 0.3125,
+    "hit_sd": 0.5273849535590737,
+    "prize_min_hits": 2,
+    "prize_probability_per_pair": 0.029258549578336384
+   },
+   "power": {
+    "achieved_size": {
+     "replay": 0.012,
+     "same": 0.008
+    },
+    "alpha_per_test": 0.0125,
+    "alt_worlds": 400,
+    "alternative": "persistent_bias",
+    "alternative_text": "persistent bias: weight 1+delta on a fixed random set of bias_cells cells; Plackett-Luce k-of-N draws",
+    "alternative_window": null,
+    "bias_cells": 5,
+    "critical_value": {
+     "replay": 343,
+     "same": 44
+    },
+    "generator": {
+     "game_id": "quina",
+     "kind": "frequency-v1",
+     "params": {
+      "mode": "WINDOW_500"
+     }
+    },
+    "horizon_contests": 100,
+    "null_mean": {
+     "replay": 142.1225,
+     "same": 31.202
+    },
+    "null_sd": {
+     "replay": 72.76818740561805,
+     "same": 5.196219428408897
+    },
+    "null_worlds": 2000,
+    "pre_horizon_contests": 600,
+    "rows": [
+     {
+      "delta": 0.02,
+      "mean_replay": 155.5025,
+      "mean_same": 31.925,
+      "power_replay": 0.02,
+      "power_replay_mc_se": 0.007,
+      "power_same": 0.0225,
+      "power_same_mc_se": 0.007415144974981945,
+      "relative_excess_replay": 0.09414413622051399,
+      "relative_excess_same": 0.023171591564643323
+     },
+     {
+      "delta": 0.05,
+      "mean_replay": 148.295,
+      "mean_same": 31.125,
+      "power_replay": 0.015,
+      "power_replay_mc_se": 0.006077622890571609,
+      "power_same": 0.01,
+      "power_same_mc_se": 0.0049749371855331,
+      "relative_excess_replay": 0.04343084311069667,
+      "relative_excess_same": -0.002467790526248348
+     },
+     {
+      "delta": 0.1,
+      "mean_replay": 151.49,
+      "mean_same": 31.35,
+      "power_replay": 0.0175,
+      "power_replay_mc_se": 0.006556247020971678,
+      "power_same": 0.01,
+      "power_same_mc_se": 0.0049749371855331,
+      "relative_excess_replay": 0.06591144962972084,
+      "relative_excess_same": 0.004743285686815035
+     },
+     {
+      "delta": 0.2,
+      "mean_replay": 162.4325,
+      "mean_same": 32.595,
+      "power_replay": 0.035,
+      "power_replay_mc_se": 0.009188987974744553,
+      "power_same": 0.0275,
+      "power_same_mc_se": 0.008176758220713145,
+      "relative_excess_replay": 0.142904888388538,
+      "relative_excess_same": 0.04464457406576483
+     },
+     {
+      "delta": 0.3,
+      "mean_replay": 169.7875,
+      "mean_same": 33.8975,
+      "power_replay": 0.025,
+      "power_replay_mc_se": 0.007806247497997998,
+      "power_same": 0.0575,
+      "power_same_mc_se": 0.011639775556255371,
+      "relative_excess_replay": 0.19465601857552461,
+      "relative_excess_same": 0.08638869303249797
+     },
+     {
+      "delta": 0.5,
+      "mean_replay": 239.175,
+      "mean_same": 40.9125,
+      "power_replay": 0.145,
+      "power_replay_mc_se": 0.017605041891458253,
+      "power_same": 0.33,
+      "power_same_mc_se": 0.023510635891017494,
+      "relative_excess_replay": 0.682879206318493,
+      "relative_excess_same": 0.31121402474200366
+     },
+     {
+      "delta": 1.0,
+      "mean_replay": 455.8525,
+      "mean_same": 56.92,
+      "power_replay": 0.725,
+      "power_replay_mc_se": 0.02232571387436469,
+      "power_same": 0.97,
+      "power_same_mc_se": 0.008529361054615993,
+      "relative_excess_replay": 2.207461872680258,
+      "relative_excess_same": 0.824242035766938
+     },
+     {
+      "delta": 2.0,
+      "mean_replay": 859.54,
+      "mean_same": 80.11,
+      "power_replay": 1.0,
+      "power_replay_mc_se": 0.0,
+      "power_same": 1.0,
+      "power_same_mc_se": 0.0,
+      "relative_excess_replay": 5.04788122922127,
+      "relative_excess_same": 1.5674636241266584
+     }
+    ],
+    "seed": 202611124,
+    "version": "m7-power-v1"
+   },
+   "primary_statistic": "S_replay",
+   "producer_identity": {
+    "identity": "frequency:WINDOW_500",
+    "producer_kind": "frequency",
+    "producer_version": "frequency-ticket-lab-v1"
+   },
+   "secondary_statistic": "S_same"
+  },
+  {
+   "component": "numbers (primary); the single-component ticket is FULL_TICKET; no auxiliary is modelled or invented",
+   "direction": "greater (an excess of prize events / hits over the fair draw)",
+   "family": "M7-EXPLORATORY-v1",
+   "fingerprint": {
+    "first": [
+     7080,
+     [
+      11,
+      33,
+      51,
+      52,
+      53
+     ]
+    ],
+    "last": [
+     7129,
+     [
+      7,
+      28,
+      31,
+      79,
+      80
+     ]
+    ],
+    "targets": [
+     7080,
+     7081,
+     7082,
+     7083,
+     7084,
+     7085,
+     7086,
+     7087,
+     7088,
+     7089,
+     7090,
+     7091,
+     7092,
+     7093,
+     7094,
+     7095,
+     7096,
+     7097,
+     7098,
+     7099,
+     7100,
+     7101,
+     7102,
+     7103,
+     7104,
+     7105,
+     7106,
+     7107,
+     7108,
+     7109,
+     7110,
+     7111,
+     7112,
+     7113,
+     7114,
+     7115,
+     7116,
+     7117,
+     7118,
+     7119,
+     7120,
+     7121,
+     7122,
+     7123,
+     7124,
+     7125,
+     7126,
+     7127,
+     7128,
+     7129
+    ],
+    "tickets_sha256": "e74b4b6637ca647dead3f50a9efb96ef2808758a9cbe11af38db980d89ea7294"
+   },
+   "game": "quina",
+   "generator": {
+    "game_id": "quina",
+    "kind": "theory-cold-v1",
+    "params": {
+     "seed": 2026,
+     "variant_key": 3345089031,
+     "window": 10
+    }
+   },
+   "id": "E1-QUINA-THEORY-COLD-W10",
+   "m6_implied_delta_rough": null,
+   "m6_origin": {
+    "null_reference": 583,
+    "null_reference_kind": "median of 1000 relabelling replicates (M6.x ladder end)",
+    "rank": "<= 1/1001 before any multiplicity correction",
+    "real": 655,
+    "selection": "one of ~40 producer runs of Quina and of 516 replay analyses over nine games",
+    "statistic": "retrospective future-replay prize events (last 200 targets of the qualification store)",
+    "status_in_m6": "EXPLORATORY ANOMALY"
+   },
+   "m6_relative_excess": 0.12349914236706683,
+   "minimum_detectable_delta_at_80pct": {
+    "replay": null,
+    "same": 2.0
+   },
+   "monte_carlo": {
+    "replicates": 9999,
+    "seed": 202610125
+   },
+   "null_constants": {
+    "expected_S_replay_at_nominal_pairs": 144.8298204127651,
+    "hit_mean": 0.3125,
+    "hit_sd": 0.5273849535590737,
+    "prize_min_hits": 2,
+    "prize_probability_per_pair": 0.029258549578336384
+   },
+   "power": {
+    "achieved_size": {
+     "replay": 0.049,
+     "same": 0.044
+    },
+    "alpha_per_test": 0.05,
+    "alt_worlds": 400,
+    "alternative": "recency_repulsion",
+    "alternative_text": "recency repulsion: cells drawn in the last 10 draws have weight 1/(1+delta); Plackett-Luce k-of-N draws",
+    "alternative_window": 10,
+    "bias_cells": 5,
+    "critical_value": {
+     "replay": 165,
+     "same": 41
+    },
+    "generator": {
+     "game_id": "quina",
+     "kind": "theory-cold-v1",
+     "params": {
+      "seed": 2026,
+      "variant_key": 3345089031,
+      "window": 10
+     }
+    },
+    "horizon_contests": 100,
+    "null_mean": {
+     "replay": 144.298,
+     "same": 31.335
+    },
+    "null_sd": {
+     "replay": 12.445346090794736,
+     "same": 5.280598200836657
+    },
+    "null_worlds": 2000,
+    "pre_horizon_contests": 600,
+    "rows": [
+     {
+      "delta": 0.02,
+      "mean_replay": 145.24,
+      "mean_same": 31.715,
+      "power_replay": 0.0625,
+      "power_replay_mc_se": 0.012103072956898178,
+      "power_same": 0.0325,
+      "power_same_mc_se": 0.008866192813152667,
+      "relative_excess_replay": 0.006528157008413249,
+      "relative_excess_same": 0.012127014520504131
+     },
+     {
+      "delta": 0.05,
+      "mean_replay": 145.1325,
+      "mean_same": 31.7625,
+      "power_replay": 0.0725,
+      "power_replay_mc_se": 0.012965699942540702,
+      "power_same": 0.0675,
+      "power_same_mc_se": 0.0125442965127583,
+      "relative_excess_replay": 0.005783170937920135,
+      "relative_excess_same": 0.013642891335567287
+     },
+     {
+      "delta": 0.1,
+      "mean_replay": 144.885,
+      "mean_same": 32.49,
+      "power_replay": 0.0475,
+      "power_replay_mc_se": 0.010635289135702893,
+      "power_same": 0.0775,
+      "power_same_mc_se": 0.013369157602481915,
+      "relative_excess_replay": 0.004067970450040814,
+      "relative_excess_same": 0.036859741503111554
+     },
+     {
+      "delta": 0.2,
+      "mean_replay": 146.695,
+      "mean_same": 34.0575,
+      "power_replay": 0.08,
+      "power_replay_mc_se": 0.013564659966250536,
+      "power_same": 0.13,
+      "power_same_mc_se": 0.016815171720800236,
+      "relative_excess_replay": 0.016611456846248762,
+      "relative_excess_same": 0.08688367640019146
+     },
+     {
+      "delta": 0.3,
+      "mean_replay": 147.01,
+      "mean_same": 34.795,
+      "power_replay": 0.0825,
+      "power_replay_mc_se": 0.01375624858019075,
+      "power_same": 0.165,
+      "power_same_mc_se": 0.018559027452967464,
+      "relative_excess_replay": 0.018794439285367615,
+      "relative_excess_same": 0.11041965852880176
+     },
+     {
+      "delta": 0.5,
+      "mean_replay": 148.6175,
+      "mean_same": 37.7575,
+      "power_replay": 0.11,
+      "power_replay_mc_se": 0.015644487847162016,
+      "power_same": 0.3,
+      "power_same_mc_se": 0.0229128784747792,
+      "relative_excess_replay": 0.0299345798278563,
+      "relative_excess_same": 0.20496250199457466
+     },
+     {
+      "delta": 1.0,
+      "mean_replay": 151.825,
+      "mean_same": 41.65,
+      "power_replay": 0.1425,
+      "power_replay_mc_se": 0.017478111311008408,
+      "power_same": 0.58,
+      "power_same_mc_se": 0.024677925358506134,
+      "relative_excess_replay": 0.05216288514047318,
+      "relative_excess_same": 0.3291846178394766
+     },
+     {
+      "delta": 2.0,
+      "mean_replay": 153.3475,
+      "mean_same": 48.005,
+      "power_replay": 0.17,
+      "power_replay_mc_se": 0.01878163997099295,
+      "power_same": 0.89,
+      "power_same_mc_se": 0.015644487847162013,
+      "relative_excess_replay": 0.06271396692954845,
+      "relative_excess_same": 0.5319929790968565
+     }
+    ],
+    "seed": 202611125,
+    "version": "m7-power-v1"
+   },
+   "primary_statistic": "S_replay",
+   "producer_identity": {
+    "identity": "hypothesis:c76202078a230c54a6fb",
+    "producer_kind": "theory",
+    "producer_version": "theory-arena-v1",
+    "strategy": "quina.cold{'window': 10}"
+   },
+   "secondary_statistic": "S_same"
+  }
+ ],
+ "isolation": "M8/M8.x/M9 research never edits this file or these generators; new hypotheses need a new pre-registration and a later start",
+ "kind": "PRE-REGISTRATION OF PROSPECTIVE HYPOTHESES — these are exploratory M6 anomalies, NOT findings",
+ "power_reading": "delta is the strength of the declared alternative: for frequency rules the relative weight of a fixed set of cells (as many as the ticket) in a persistent Plackett-Luce k-of-N bias; for the cold rule the down-weighting 1/(1+delta) of cells drawn in the last W draws (recency repulsion). The tables say which persistent biases 100 contests can detect at the per-test level (0.0125 = Bonferroni bound of the Holm family; 0.05 for the exploratory member). The M6-implied delta is a rough interpolation of the M6 relative replay excess and is optimistic (selected maxima shrink). Low power does not demonstrate fairness.",
+ "prior_inspection": [
+  "M6 CP5 Frequency Ticket Lab: same-contest z of all 45 (game, mode) cells, uncorrected; for these modes: Lotofacil DECAYED +0.55, WINDOW_100 +0.85; Mega-Sena WINDOW_500 +0.24; Quina WINDOW_500 -1.60",
+  "M6 CP5 Temporal Ticket Replay of 45 frequency analyses with 20 relabelling replicates: 5 at the rank floor (Lotofacil DECAYED / WINDOW_100 / WINDOW_20, Mega-Sena WINDOW_500, Quina WINDOW_500)",
+  "M6 CP5 post-hoc 200-replicate resolution of Lotofacil (chosen after seeing the result): WINDOW_100 rank 0.010, DECAYED 0.010, WINDOW_20 0.020",
+  "M6 CP5 post-hoc split-half Spearman correlation of cell counts per game (Lotofacil +0.52, p = 0.0073, the only one below 0.05)",
+  "M6.x qualification (candidate 51ded45): 516 replay analyses, 34 escalated by the predeclared ladder, 7 left at the floor (these five producers plus two in-sample agent runs)",
+  "REAL-QUALIFICATION-v1 pre-freeze descriptive chi-square of Lotofacil marginals (p ~ 0.0002, concentrated in contests 1901-3791)",
+  "Choices plausibly influenced by the inspection: which modes/variants are hypotheses (all five), the direction (excess), and the replay statistic as primary. Not influenced: generator code (frozen M6 code, fingerprinted), the fair null, alpha, the horizon length (fixed by the roadmap before M6 ended).",
+  "Contests after the anchors below (Lotofacil > 3791, Mega-Sena > 3063, Quina > 7129) have not been analysed with these generators; they are outside the horizon anyway, which starts after the league start receipt."
+ ],
+ "protocol_id": "M7-HYPOTHESES-v1",
+ "statistics": {
+  "S_replay": "number of prize events (primary hits >= the game's lowest prize tier) of the ticket committed for horizon contest c_i against the official draw of every later horizon contest c_j (j > i), over eligible pairs; the origin draw is never scored",
+  "S_same": "sum of primary hits of the ticket committed for c_i on the draw of c_i, over eligible targets (secondary, descriptive, no decision role)",
+  "null_S_replay": "exact Monte Carlo of the whole process: fair draws for every horizon contest, tickets regenerated by the frozen generator from the real pre-horizon history plus the simulated draws, the same eligible-pair mask; p = (1 + #{S_sim >= S_obs}) / (R + 1)",
+  "null_S_same": "exact: own-target hits are i.i.d. hypergeometric under the fair draw whatever the ticket; n-fold convolution"
+ },
+ "status": "FROZEN"
+}
