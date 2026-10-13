@@ -218,7 +218,7 @@ def check_online(history, report: Report, limit: int) -> None:
             with urllib.request.urlopen(request, timeout=20) as response:  # noqa: S310
                 official = json.loads(response.read())
             numbers = [int(n) for n in official["listaDezenas"]]
-            ours = sorted(contests[contest], key=lambda d: d["draw_index"])[0]["numbers"]
+            ours = sorted(contests[contest][-1], key=lambda d: d["draw_index"])[0]["numbers"]  # the latest official version
             if (numbers if game in POSITIONED else sorted(numbers)) != list(ours):
                 report.fail(f"history {game} {contest}: differs from the official API")
             else:
