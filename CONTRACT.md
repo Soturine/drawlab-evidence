@@ -28,15 +28,36 @@ PUBLISHED (200 with the target's numbers), NOT_PUBLISHED (the API's inner 404), 
 PUBLISHED if latest ≥ target or the target is PUBLISHED; UNPUBLISHED only if latest < target **and** NOT_PUBLISHED;
 otherwise UNKNOWN.
 
-## Timing classes (re-derived by the verifier)
+## Timing classes (rule `m7-timing-v2`, re-derived by the verifier)
 
 | Ledger state | Condition |
 |---|---|
-| COMMITTED (`PROSPECTIVE_LIVE`) | check 1 UNPUBLISHED, bytes confirmed on the remote, check 2 (after the confirmation) UNPUBLISHED, GitHub server push time not after check 2's provider `Date` (+5 min tolerance) |
+| COMMITTED (`PROSPECTIVE_LIVE`) | every piece of proof: check 1 and check 2 both explicitly UNPUBLISHED, the committed bytes served back by the remote, the GitHub server push time present and parseable, both provider `Date` headers present with check 1 ≤ check 2, and `Date(check 1) − 2 s ≤ push time ≤ Date(check 2) + 2 s` |
 | CATCH_UP | the result was PUBLISHED at a check (scored, never prospective) |
-| UNCERTAIN | anything else (failed or ambiguous checks, unconfirmed remote) |
+| UNCERTAIN | anything missing, unparseable, contradictory or out of order (fails closed) |
 | CONFLICT | the remote already held different bytes at the path |
 | MISSED | the result was published before any confirmed commitment (stays in the denominator) |
+
+The 2 s allowance covers whole-second truncation of both clocks; the first real receipts showed push − Date(check 1) of
+3–4 s and Date(check 2) − push of 2–3 s. The verifier carries a verbatim copy of the rule (`classify_commitment`).
+The 36 rehearsal receipts published on 2026-10-13 before this rule used `m7-timing-v1` (5 min tolerance, a missing push
+time accepted); they are all CATCH_UP, never M7 evidence, and are not re-labelled.
+
+## League start (`go/GO-RECEIPT.json`, `go/ARMED.json`, `go/<qualification id>.json`)
+
+Two phases, each written by exactly one commit pushed by an authorised account (GitHub's activity log is the witness):
+the GO receipt (`m7-go-receipt-v1`: protocol and pre-registration hashes, qualification id and matrix hash, candidate
+revision, per game the provider observation made just before publication and `first_target = latest + 1`) with a
+public copy of the qualification matrix, then ARMED (`m7-go-armed-v1`: bound to the GO commit and receipt hash, a fresh
+observation per game). A game whose first target was published between the two is NOT_ARMED and has no horizon. League
+ledgers without a GO, or commitments for games/contests not armed, or published before ARMED, fail verification.
+
+## Operations records (`ops/`, not evidence)
+
+`ops/<date>.jsonl` watcher log; `ops/health.jsonl` one line per tick with its operational health (process, official
+source, publication, scientific eligibility, overall HEALTHY / DEGRADED / BLOCKED / FAILED); `ops/publisher-smoke/<run>.json`
+the publisher's qualification writes (run id, revision, token expiry date — never the token). These are append-only
+operational records: they show whether the system is running, never what a prediction was.
 
 ## Ledger (`ledger/<league>.jsonl`, schema `m7-ledger-v1`)
 

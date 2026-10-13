@@ -56,12 +56,26 @@ class Report:
         self.failures.append(message)
 
 
+def commits_by_path(root: Path, folder: str) -> dict[str, list[str]]:
+    """Every commit that touched each path under ``folder`` (exact paths, no rename detection), in one git call:
+    the same answer as ``git log --no-renames -- <path>`` per file, without one process per file."""
+    out: dict[str, list[str]] = {}
+    current = None
+    for line in git(root, "log", "--format=@%H", "--name-only", "--no-renames", "--", folder).splitlines():
+        if line.startswith("@"):
+            current = line[1:]
+        elif line.strip() and current:
+            out.setdefault(line.strip(), []).append(current)
+    return out
+
+
 def check_commitments(root: Path, report: Report) -> dict[str, dict]:
     out = {}
+    touched = commits_by_path(root, "commitments")
     for path in sorted((root / "commitments").rglob("*.json")) if (root / "commitments").exists() else []:
         relative = path.relative_to(root).as_posix()
         # exact path, no --follow: rename detection would attribute similar new files' commits to this one
-        commits = git(root, "log", "--format=%H", "--no-renames", "--", relative).split()
+        commits = touched.get(relative, [])
         if len(commits) != 1:
             report.fail(f"{relative}: touched by {len(commits)} commits (a published commitment must never change)")
         else:
@@ -114,13 +128,66 @@ def check_ledgers(root: Path, report: Report) -> dict[str, list[dict]]:
     return ledgers
 
 
-def derive_timing(receipt: dict) -> str:
-    verdicts = [(receipt.get("availability_check_1") or {}).get("verdict"), (receipt.get("availability_check_2") or {}).get("verdict")]
+# ---- m7-timing-v2: copied verbatim from drawlab/league/timing.py (a parity test keeps them identical) ----
+from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
+from typing import Any, Mapping
+
+TIMING_RULE = "m7-timing-v2"
+CLOCK_ALLOWANCE = timedelta(seconds=2)
+
+
+def _parse_iso(value: Any) -> datetime | None:
+    if not isinstance(value, str) or not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo is not None else None
+
+
+def _parse_http_date(value: Any) -> datetime | None:
+    if not isinstance(value, str) or not value:
+        return None
+    try:
+        parsed = parsedate_to_datetime(value)
+    except (TypeError, ValueError, IndexError):
+        return None
+    return parsed if parsed is not None and parsed.tzinfo is not None else None
+
+
+def classify_commitment(check_1: Mapping[str, Any] | None, check_2: Mapping[str, Any] | None, *, confirmed: bool,
+                        push_time: Any) -> tuple[str, str]:
+    """(timing, reason) under ``m7-timing-v2``; fails closed."""
+    check_1, check_2 = check_1 or {}, check_2 or {}
+    verdicts = [check_1.get("verdict"), check_2.get("verdict")]
     if "PUBLISHED" in verdicts:
-        return "CATCH_UP"
-    if not receipt.get("remote_confirmed") or verdicts != ["UNPUBLISHED", "UNPUBLISHED"]:
-        return "UNCERTAIN"
-    return "PROSPECTIVE_LIVE"
+        return "CATCH_UP", "the official result was published at an availability check"
+    if confirmed is not True:
+        return "UNCERTAIN", "the remote did not serve back the committed bytes"
+    if verdicts != ["UNPUBLISHED", "UNPUBLISHED"]:
+        return "UNCERTAIN", f"availability checks were {verdicts}, not both UNPUBLISHED"
+    pushed = _parse_iso(push_time)
+    if pushed is None:
+        return "UNCERTAIN", "no verifiable GitHub server push time for the commit"
+    first = _parse_http_date((check_1.get("latest") or {}).get("provider_date"))
+    second = _parse_http_date((check_2.get("latest") or {}).get("provider_date"))
+    if first is None or second is None:
+        return "UNCERTAIN", "a provider Date header is missing or unparseable"
+    if first > second:
+        return "UNCERTAIN", "provider Date of check 1 is after check 2 (contradictory provider clock)"
+    if pushed < first - CLOCK_ALLOWANCE:
+        return "UNCERTAIN", "the server push time is before the first availability check (order not demonstrable)"
+    if pushed > second + CLOCK_ALLOWANCE:
+        return "UNCERTAIN", "the server push time is after the second availability check (order not demonstrable)"
+    return "PROSPECTIVE_LIVE", "both checks unpublished around a remotely confirmed publication, in causal order"
+# ---- end of the copied rule ----
+
+
+def derive_timing(receipt: dict) -> str:
+    return classify_commitment(receipt.get("availability_check_1"), receipt.get("availability_check_2"),
+                               confirmed=receipt.get("remote_confirmed") is True, push_time=receipt.get("server_push_time"))[0]
 
 
 def recheck_verdict(check: dict, target: int) -> str | None:
@@ -189,9 +256,7 @@ def check_events(ledgers: dict[str, list[dict]], commitments: dict[str, dict], h
                     if check and recheck_verdict(check, int(identity["contest"])) != check.get("verdict"):
                         report.fail(f"{relative} seq {entry['seq']}: {name} verdict does not follow from its recorded answers")
                 expected = {"PROSPECTIVE_LIVE": "COMMITTED", "CATCH_UP": "CATCH_UP", "UNCERTAIN": "UNCERTAIN"}[derive_timing(receipt)]
-                if derive_timing(receipt) == "PROSPECTIVE_LIVE" and receipt.get("timing") != "PROSPECTIVE_LIVE":
-                    expected = {"CATCH_UP": "CATCH_UP"}.get(receipt.get("timing"), "UNCERTAIN")  # a stricter server-time rule may downgrade
-                if entry["state"] != expected and not (entry["state"] == "UNCERTAIN" and expected == "COMMITTED"):
+                if entry["state"] != expected:
                     report.fail(f"{relative} seq {entry['seq']}: state {entry['state']} but the receipt supports {expected}")
                 else:
                     report.ok("timing classes re-derived")
@@ -225,6 +290,81 @@ def check_online(history, report: Report, limit: int) -> None:
                 report.ok("history vs official API")
 
 
+AUTHORIZED_GO_ACTORS = ("Soturine",)
+
+
+def check_go(root: Path, ledgers: dict, report: Report, online: bool) -> None:
+    """The league may exist only after a valid GO and its ARMED record (drawlab.league.go), and only for armed games."""
+    league_files = [name for name in ledgers if name.split("/")[-1] in ("frozen.jsonl", "adaptive.jsonl")]
+    go_path, arm_path = root / "go" / "GO-RECEIPT.json", root / "go" / "ARMED.json"
+    if not go_path.exists():
+        if league_files:
+            report.fail("league ledgers exist without a GO receipt")
+        else:
+            report.ok("no league before a GO")
+        return
+    receipt = json.loads(go_path.read_text(encoding="utf-8"))
+    go_commits = git(root, "log", "--format=%H", "--no-renames", "--", "go/GO-RECEIPT.json").split()
+    problems = []
+    if len(go_commits) != 1:
+        problems.append(f"GO receipt written by {len(go_commits)} commits")
+    if receipt.get("schema") != "m7-go-receipt-v1" or receipt.get("decision") != "GO":
+        problems.append("GO receipt schema/decision")
+    for game, target in (receipt.get("first_targets") or {}).items():
+        seen = (receipt.get("observations_before_publication") or {}).get(game) or {}
+        if seen.get("latest") is None or target != int(seen["latest"]) + 1 or seen.get("target_state") != "NOT_PUBLISHED":
+            problems.append(f"{game}: first target is not the unpublished next contest")
+    copy = root / "go" / f"{receipt.get('qualification_id')}.json"
+    if copy.exists():
+        matrix = json.loads(copy.read_text(encoding="utf-8"))
+        if matrix.get("decision") != "GO" or matrix.get("candidate_revision") != receipt.get("candidate_revision"):
+            problems.append("the published qualification matrix is not a GO for the receipt's candidate")
+    else:
+        problems.append("no public copy of the qualification matrix")
+    armed: dict = {}
+    arm_commit = None
+    if arm_path.exists():
+        arm = json.loads(arm_path.read_text(encoding="utf-8"))
+        arm_commits = git(root, "log", "--format=%H", "--no-renames", "--", "go/ARMED.json").split()
+        if len(arm_commits) != 1 or arm.get("go_commit") != (go_commits or [None])[-1] or arm.get("go_receipt_sha256") != digest(receipt):
+            problems.append("ARMED record does not bind the GO commit and receipt")
+        else:
+            arm_commit = arm_commits[0]
+            armed = {g: v["first_target"] for g, v in (arm.get("games") or {}).items()
+                     if v.get("verdict") == "UNPUBLISHED" and v.get("target_state") == "NOT_PUBLISHED" and v.get("first_target") == receipt["first_targets"].get(g)}
+    if online and go_commits:
+        try:
+            request = urllib.request.Request("https://api.github.com/repos/Soturine/drawlab-evidence/activity?per_page=100",
+                                             headers={"Accept": "application/vnd.github+json", "User-Agent": "drawlab-evidence-verifier"})
+            with urllib.request.urlopen(request, timeout=20) as response:  # noqa: S310
+                activity = {item.get("after"): item for item in json.loads(response.read())}
+            for commit in [go_commits[0]] + ([arm_commit] if arm_commit else []):
+                actor = ((activity.get(commit) or {}).get("actor") or {}).get("login")
+                if actor not in AUTHORIZED_GO_ACTORS:
+                    problems.append(f"{commit[:12]} was pushed by {actor!r} (not authorised) or is absent from GitHub's activity log")
+        except OSError as exc:
+            problems.append(f"GitHub activity API unavailable: {exc}")
+    for problem in problems:
+        report.fail(f"GO: {problem}")
+    if not problems:
+        report.ok("GO receipt and ARMED record")
+    after_arm = set(git(root, "rev-list", "--ancestry-path", f"{arm_commit}..HEAD").split()) | {arm_commit} if arm_commit else set()
+    for name in league_files:
+        for entry in ledgers[name]:
+            identity = entry["identity"]
+            if entry["state"] not in ("COMMITTED", "CATCH_UP", "UNCERTAIN"):
+                continue
+            first = armed.get(identity["game"])
+            if first is None or int(identity["contest"]) < int(first):
+                report.fail(f"{name} seq {entry['seq']}: league commitment for a game/contest that is not armed")
+                continue
+            commit = ((entry.get("data") or {}).get("receipt") or {}).get("remote_commit")
+            if not arm_commit or not commit or commit not in after_arm:
+                report.fail(f"{name} seq {entry['seq']}: league commitment not published after the ARMED record")
+            else:
+                report.ok("league commitments after ARMED")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=".")
@@ -238,6 +378,7 @@ def main() -> int:
     ledgers = check_ledgers(root, report)
     history = load_history(root)
     check_events(ledgers, commitments, history, report)
+    check_go(root, ledgers, report, args.online)
     for sha in args.expect_ancestor:
         ancestor = subprocess.run(["git", "merge-base", "--is-ancestor", sha, "HEAD"], cwd=root).returncode == 0
         report.ok("expected ancestors") if ancestor else report.fail(f"{sha} is not an ancestor of HEAD: history was rewritten")
