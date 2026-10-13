@@ -47,8 +47,8 @@ time accepted); they are all CATCH_UP, never M7 evidence, and are not re-labelle
 
 Two phases, each written by exactly one commit pushed by an authorised account (GitHub's activity log is the witness):
 the GO receipt (`m7-go-receipt-v1`: protocol and pre-registration hashes, qualification id and matrix hash, candidate
-revision, per game the provider observation made just before publication and `first_target = latest + 1`) with a
-public copy of the qualification matrix, then ARMED (`m7-go-armed-v1`: bound to the GO commit and receipt hash, a fresh
+revision, per game the provider observation made just before publication and `first_target = latest + 1`) with the
+qualification matrix in the same commit — byte for byte, its SHA-256 equal to the receipt's `qualification_sha256` — then ARMED (`m7-go-armed-v1`: bound to the GO commit and receipt hash, a fresh
 observation per game). A game whose first target was published between the two is NOT_ARMED and has no horizon. League
 ledgers without a GO, or commitments for games/contests not armed, or published before ARMED, fail verification.
 

@@ -316,7 +316,10 @@ def check_go(root: Path, ledgers: dict, report: Report, online: bool) -> None:
             problems.append(f"{game}: first target is not the unpublished next contest")
     copy = root / "go" / f"{receipt.get('qualification_id')}.json"
     if copy.exists():
-        matrix = json.loads(copy.read_text(encoding="utf-8"))
+        raw = copy.read_bytes()
+        matrix = json.loads(raw)
+        if sha256(raw).hexdigest() != receipt.get("qualification_sha256"):
+            problems.append("the published qualification matrix is not the one hashed in the GO receipt")
         if matrix.get("decision") != "GO" or matrix.get("candidate_revision") != receipt.get("candidate_revision"):
             problems.append("the published qualification matrix is not a GO for the receipt's candidate")
     else:
