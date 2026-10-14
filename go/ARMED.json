@@ -1,0 +1,70 @@
+{
+ "games": {
+  "diadesorte": {
+   "first_target": 1322,
+   "latest": 1321,
+   "provider_date": "Wed, 14 Oct 2026 05:02:44 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "duplasena": {
+   "first_target": 3020,
+   "latest": 3019,
+   "provider_date": "Wed, 14 Oct 2026 05:02:45 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "lotofacil": {
+   "first_target": 3804,
+   "latest": 3803,
+   "provider_date": "Wed, 14 Oct 2026 05:02:46 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "lotomania": {
+   "first_target": 2987,
+   "latest": 2986,
+   "provider_date": "Wed, 14 Oct 2026 05:02:48 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "maismilionaria": {
+   "first_target": 398,
+   "latest": 397,
+   "provider_date": "Wed, 14 Oct 2026 05:02:49 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "megasena": {
+   "first_target": 3070,
+   "latest": 3069,
+   "provider_date": "Wed, 14 Oct 2026 05:02:50 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "quina": {
+   "first_target": 7142,
+   "latest": 7141,
+   "provider_date": "Wed, 14 Oct 2026 05:02:51 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "supersete": {
+   "first_target": 910,
+   "latest": 909,
+   "provider_date": "Wed, 14 Oct 2026 05:02:53 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  },
+  "timemania": {
+   "first_target": 2455,
+   "latest": 2454,
+   "provider_date": "Wed, 14 Oct 2026 05:02:54 GMT",
+   "target_state": "NOT_PUBLISHED",
+   "verdict": "UNPUBLISHED"
+  }
+ },
+ "go_commit": "dea1b1f0844f98c622fad0fc58d12275f1618601",
+ "go_receipt_sha256": "397c94f3e7178acfe0446e589637827c2a23ea932911ec96018d1f325d96681e",
+ "schema": "m7-go-armed-v1"
+}
