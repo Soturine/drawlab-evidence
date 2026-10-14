@@ -1,0 +1,1 @@
+{"at": "2026-10-14T02:33:49.149984+00:00", "note": "publisher qualification smoke: not a prediction (the expiry date is public, the token never is)", "revision": "cbe74b66358dbb532c72fef446ef9e58c5b3df03", "run_id": "38501554091", "schema": "m7-publisher-check-v1", "token_expiry": null}
