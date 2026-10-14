@@ -1,0 +1,1 @@
+{"alerts": ["LEAGUE mode without a valid GO receipt for the pinned protocol: nothing is committed (no GO receipt on the remote)"], "at_client": "2026-10-14T02:08:20.405772+00:00", "event": "tick.completed", "mode": "LEAGUE", "revision": "c1ef0b0d18dd48fe501d250360ff5a59ab526db0", "watcher": "m7-watcher-v1"}
