@@ -1,0 +1,1009 @@
+{
+ "qualification_id": "M7Q-20261014T013658Z-c526d50d",
+ "candidate_revision": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+ "started_at": "2026-10-14T02:28:31.453795+00:00",
+ "finished_at": "2026-10-14T02:30:36.200484+00:00",
+ "states": [
+  "PASS",
+  "FAIL",
+  "PARTIAL",
+  "NOT_APPLICABLE",
+  "NOT_SUPPORTED",
+  "BLOCKED",
+  "NOT_RUN"
+ ],
+ "counts": {
+  "PASS": 95,
+  "FAIL": 0,
+  "PARTIAL": 0,
+  "NOT_APPLICABLE": 0,
+  "NOT_SUPPORTED": 0,
+  "BLOCKED": 0,
+  "NOT_RUN": 0
+ },
+ "decision": "GO",
+ "critical_failures": [],
+ "external_blockers": [],
+ "go_receipt_already_published": false,
+ "rule": "GO only if every critical cell is PASS or NOT_APPLICABLE; only BLOCKED (external) critical cells -> NO_GO_EXTERNAL_BLOCKER; otherwise NO_GO",
+ "cells": [
+  {
+   "area": "CANDIDATE",
+   "capability": "candidate = HEAD, clean tracked tree",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "HEAD c526d50d7d33, dirty=False",
+   "reason": "the qualified tree is not the candidate revision"
+  },
+  {
+   "area": "PUBLICATION",
+   "capability": "public evidence repository cloned",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "head 50dcb15a764e4ff6e9b9f3ad64f90b0a6d9b682f",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "M7-PROTOCOL-v1 hash pinned = recomputed = public copy",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "f7d79c5fd130766b82b08f2798adacf8dc36933dabda72acb2a32b066d6627a4",
+   "reason": "hash differs between pin, file and public copy"
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "M7-PROTOCOL-v1 never edited after its freeze",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "commits touching the file: ['e7c7cff4cc9602d2b2bc0dce05b131f69880d587']",
+   "reason": "the frozen file was changed by a later commit"
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "M7-HYPOTHESES-v1 hash pinned = recomputed = public copy",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "a2b169669ccaf251e5fed7036a4a2186baeef066a79980e0928e53d608bc5e0e",
+   "reason": "hash differs between pin, file and public copy"
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "M7-HYPOTHESES-v1 never edited after its freeze",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "commits touching the file: ['5722c8a293d1fe914adfa774902b39cd40f70e9a']",
+   "reason": "the frozen file was changed by a later commit"
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "diadesorte",
+   "state": "PASS",
+   "evidence": "10 league fingerprints + 0 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "duplasena",
+   "state": "PASS",
+   "evidence": "10 league fingerprints + 0 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "lotofacil",
+   "state": "PASS",
+   "evidence": "11 league fingerprints + 2 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "lotomania",
+   "state": "PASS",
+   "evidence": "10 league fingerprints + 0 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "maismilionaria",
+   "state": "PASS",
+   "evidence": "10 league fingerprints + 0 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "megasena",
+   "state": "PASS",
+   "evidence": "11 league fingerprints + 1 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "quina",
+   "state": "PASS",
+   "evidence": "12 league fingerprints + 2 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "supersete",
+   "state": "PASS",
+   "evidence": "10 league fingerprints + 0 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "PROTOCOL",
+   "capability": "fingerprints on the official frontier",
+   "scope": "timemania",
+   "state": "PASS",
+   "evidence": "10 league fingerprints + 0 pre-registration fingerprints reproduced",
+   "reason": ""
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "diadesorte",
+   "state": "PASS",
+   "evidence": "public history 1-1320, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "duplasena",
+   "state": "PASS",
+   "evidence": "public history 1-3019, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "lotofacil",
+   "state": "PASS",
+   "evidence": "public history 1-3802, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "lotomania",
+   "state": "PASS",
+   "evidence": "public history 1-2986, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "maismilionaria",
+   "state": "PASS",
+   "evidence": "public history 1-397, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "megasena",
+   "state": "PASS",
+   "evidence": "public history 1-3069, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "quina",
+   "state": "PASS",
+   "evidence": "public history 1-7140, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "supersete",
+   "state": "PASS",
+   "evidence": "public history 1-909, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "DATA",
+   "capability": "public official history = frozen anchor, no gaps",
+   "scope": "timemania",
+   "state": "PASS",
+   "evidence": "public history 1-2453, prefix digest = anchor",
+   "reason": "public history differs from the frozen anchor or has gaps"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "diadesorte",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "duplasena",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "lotofacil",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "lotomania",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "maismilionaria",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "megasena",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "quina",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "supersete",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "GENERATORS",
+   "capability": "public tickets = frozen generator(history before target)",
+   "scope": "timemania",
+   "state": "PASS",
+   "evidence": "4 public tickets recomputed, 0 mismatches",
+   "reason": "mismatches: []"
+  },
+  {
+   "area": "PUBLICATION",
+   "capability": "evidence repository is public",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "visibility public",
+   "reason": "the evidence repository is not public"
+  },
+  {
+   "area": "PUBLICATION",
+   "capability": "branch protection (no force, no deletion, linear, admins)",
+   "scope": "main",
+   "state": "PASS",
+   "evidence": "{\"state\": \"PROTECTED\", \"allow_force_pushes\": {\"enabled\": false}, \"allow_deletions\": {\"enabled\": false}, \"required_linear_history\": {\"enabled\": true}, \"enforce_admins\": {\"url\": \"https://api.github.com/repos/Soturine/drawlab-evidence/branches/main/protection/enforce_admins\", \"enabled\": true}}",
+   "reason": "branch protection missing or weak"
+  },
+  {
+   "area": "PUBLICATION",
+   "capability": "independent public verifier on a fresh clone (+ official API)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "verified=True checked={'commitments never modified': 36, 'commitment hashes': 36, 'ledger chains': 1, 'ledgers append-only': 1, 'timing classes re-derived': 36, 'scores recomputed': 36, 'no league before a GO': 1, 'history vs official API': 9}",
+   "reason": "failures: []"
+  },
+  {
+   "area": "PUBLICATION",
+   "capability": "real publications: remote confirmation + GitHub server time",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "36 real publications, 36 confirmed by fetching the remote, 36 with server push time",
+   "reason": "a real publication lacks remote confirmation or server time"
+  },
+  {
+   "area": "PUBLICATION",
+   "capability": "no prospective M7 evidence before GO (rehearsals CATCH_UP, no league ledgers)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "rehearsal states ['CATCH_UP', 'DRAFT', 'ELIGIBLE', 'REVEALED', 'SCORED']; league ledgers present: False",
+   "reason": "a pre-GO row could read as prospective, or league ledgers exist before a GO"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "forged timestamps",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "server time after provider time -> UNCERTAIN; back-dated client time in the ledger -> refused",
+   "reason": "a forged time was accepted"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "post-publication edit of a ticket",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "publisher refused; verifier failures 3",
+   "reason": "an edited ticket was not detected"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "rewritten public history",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "verifier with the kept SHA: verified=False",
+   "reason": "a rewritten history passed"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "hash mismatch",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "tampered payload rejected; edited protocol changes its hash; absent pinned file refused",
+   "reason": "a hash mismatch was accepted"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "result available before the commit",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "timings ['CATCH_UP', 'CATCH_UP', 'CATCH_UP', 'CATCH_UP']",
+   "reason": "a commitment after the result was labelled prospective"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "late commit / selective MISSED exclusion",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "16 MISSED rows kept in the horizon; accounting complete=True",
+   "reason": "late or missed contests left the denominator"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "invalid or missing token",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "bad remote -> refused (FAILED health); ledger written False; https without token -> refused",
+   "reason": "a tick without a usable credential was not refused, or evidence was written"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "old replay promoted to prospective",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "string promotion refused; selected agent claim IN_SAMPLE_SELECTION_PLUMBING_ONLY; pre-GO membership PRE_GO_REHEARSAL",
+   "reason": "an old replay became prospective"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "frozen producer updated",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "a retuned frozen bot -> refused",
+   "reason": "a changed frozen producer passed verification"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "adaptive learning before reveal",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "update without reveal receipt refused; pre-horizon state files 0",
+   "reason": "the adaptive league learned before a reveal"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "post-hoc bot selection",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "dropping a losing bot -> refused",
+   "reason": "a post-hoc cohort change was accepted"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "statistic over mixed leagues",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "pooled leagues -> refused",
+   "reason": "a mixed-league statistic was computed"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "ledger vs Observatory divergence",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "API receipts 64 = ledger 64; hashes match True; report {'megasena': {'SCORED': 4, 'COMMITTED': 4}, 'supersete': {'SCORED': 4, 'COMMITTED': 4}}",
+   "reason": "the Observatory API diverges from the ledger"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "false green from an ok:true file / other revision",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "ok:true file -> INCOMPLETE; CI of another revision -> FAIL",
+   "reason": "an imported boolean or another revision passed"
+  },
+  {
+   "area": "ADVERSARIAL",
+   "capability": "crash recovery and idempotency",
+   "scope": "simulated",
+   "state": "PASS",
+   "evidence": "after a kill and two ticks: states {'COMMITTED'}; remote ledger extends the local one",
+   "reason": "a crash duplicated or lost a row"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "lotofacil",
+   "state": "PASS",
+   "evidence": "mean 9.000000 = closed form 9.000000; simulated size 0.0442 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "megasena",
+   "state": "PASS",
+   "evidence": "mean 0.600000 = closed form 0.600000; simulated size 0.0380 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "quina",
+   "state": "PASS",
+   "evidence": "mean 0.312500 = closed form 0.312500; simulated size 0.0408 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "duplasena",
+   "state": "PASS",
+   "evidence": "mean 1.440000 = closed form 1.440000; simulated size 0.0415 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "lotomania",
+   "state": "PASS",
+   "evidence": "mean 10.000000 = closed form 10.000000; simulated size 0.0437 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "timemania",
+   "state": "PASS",
+   "evidence": "mean 0.875000 = closed form 0.875000; simulated size 0.0330 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "diadesorte",
+   "state": "PASS",
+   "evidence": "mean 1.580645 = closed form 1.580645; simulated size 0.0442 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "supersete",
+   "state": "PASS",
+   "evidence": "mean 0.700000 = closed form 0.700000; simulated size 0.0442 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "exact per-contest law and test size",
+   "scope": "maismilionaria",
+   "state": "PASS",
+   "evidence": "mean 0.720000 = closed form 0.720000; simulated size 0.0352 at alpha 0.05",
+   "reason": "exact law or test size wrong"
+  },
+  {
+   "area": "STATISTICS",
+   "capability": "S_replay null keeps the dependence between pairs",
+   "scope": "lotofacil",
+   "state": "PASS",
+   "evidence": "whole-process null SD 33.9 vs independent-pairs SD 8.6",
+   "reason": "the S_replay null ignores pair dependence"
+  },
+  {
+   "area": "WATCHER",
+   "capability": "workflow contract (schedule, dispatch, concurrency, least privilege)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "present: ['schedule:', 'workflow_dispatch:', 'concurrency:', 'contents: read', 'DRAWLAB_EVIDENCE_TOKEN', 'cancel-in-progress: false', 'drawlab.league.runtime', 'path: league-runtime', 'pip install -e ./league-runtime']",
+   "reason": "workflow contract incomplete"
+  },
+  {
+   "area": "WATCHER",
+   "capability": "watcher workflow ran green at the candidate (probe on a GitHub runner)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED: [(38490155854, 'success')]",
+   "reason": "not observed"
+  },
+  {
+   "area": "WATCHER",
+   "capability": "official source reachable now (all nine games)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"lotofacil\": 3802, \"megasena\": 3069, \"quina\": 7140, \"duplasena\": 3019, \"lotomania\": 2986, \"timemania\": 2453, \"diadesorte\": 1320, \"supersete\": 909, \"maismilionaria\": 397}",
+   "reason": "official source not reachable"
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "scheduled watcher active (workflow on the default branch)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "workflow on origin/main: True",
+   "reason": ""
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "least-privilege publisher credential configured",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "repository secret names: ['DRAWLAB_EVIDENCE_TOKEN']",
+   "reason": ""
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-01 timing fail-closed, publisher = recovery = public verifier (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_timing.py\": {\"tests\": 26, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-02 GO receipt validated, two-phase GO/ARMED, single gate (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_go.py\": {\"tests\": 21, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-03 publisher check reports four separate facts and token expiry (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_publisher_check.py\": {\"tests\": 6, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-04 tick health separate from exit code; outages never HEALTHY (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_health.py\": {\"tests\": 18, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-05 terminal S_replay closes every hypothesis (100-contest E2E) (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_e2e.py\": {\"tests\": 6, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_evaluation.py\": {\"tests\": 7, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-06 Observatory reads the verified public evidence (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_public_reader.py\": {\"tests\": 9, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-07 fingerprints reproduce from the pinned public source (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_public_fingerprints.py\": {\"tests\": 4, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-09 alerts and workflow gate (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_monitor.py\": {\"tests\": 25, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-10 deployment: the league runs the GO candidate whatever main becomes (A qualified, main B then M8 C) (CI JUnit, Linux)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_deployment.py\": {\"tests\": 7, \"failures\": 0, \"errors\": 0, \"skipped\": 0}}",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-08 critical paths on Windows (CI JUnit, windows-latest)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"tests/test_m7_timing.py\": {\"tests\": 26, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_go.py\": {\"tests\": 21, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_ledger.py\": {\"tests\": 12, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_watcher.py\": {\"tests\": 20, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_health.py\": {\"tests\": 18, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_public_reader.py\": {\"tests\": 9, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/test_m7_monitor.py\": {\"tests\": 25, \"failures\": 0, \"errors\": 0, \"skipped\": 0}, \"tests/",
+   "reason": "not all passed without skips: {}"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-08 targeted mutation probes with a valid control (all killed)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"totals\": {\"KILLED\": 25, \"SURVIVED\": 0, \"INVALID\": 0, \"probes\": 25}, \"control\": \"172 passed, 2 skipped in 472.57s (0:07:52)\"}",
+   "reason": "control valid=True, survivors=[]"
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "publisher secret present in the Actions context",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"secret_present\": true, \"errors\": []}",
+   "reason": "secret_present is not true: []"
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "publisher token accepted by GitHub",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"publisher_auth_verified\": true, \"errors\": []}",
+   "reason": "publisher_auth_verified is not true: []"
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "publisher wrote to drawlab-evidence from Actions",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"publisher_remote_write_verified\": true, \"errors\": []}",
+   "reason": "publisher_remote_write_verified is not true: []"
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "anonymous read-back of the publisher's write",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"publisher_remote_readback_verified\": true, \"errors\": []}",
+   "reason": "publisher_remote_readback_verified is not true: []"
+  },
+  {
+   "area": "EXTERNAL",
+   "capability": "publisher token not expired (expiry monitored)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "UNKNOWN: GitHub did not report an expiry for this token (a token without expiry, or not a PAT): rotate it on a schedule",
+   "reason": "the publisher token is expired or its state is missing"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-06 public reader verified the current public head",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "{\"state\": \"REHEARSAL\", \"last_verified_remote_sha\": \"50dcb15a764e4ff6e9b9f3ad64f90b0a6d9b682f\", \"last_sync_at\": \"2026-10-14T02:30:26.270565+00:00\", \"reason\": null}",
+   "reason": "reader state REHEARSAL: None"
+  },
+  {
+   "area": "HARDENING",
+   "capability": "H-09 monitor: no critical alert (protection, evidence, verifier, ticks)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "[{\"kind\": \"TOKEN_EXPIRY_UNKNOWN\", \"severity\": \"WARN\", \"detail\": \"the newest publisher smoke reports no token expiry: rotate on a schedule\"}]",
+   "reason": "critical alerts: []"
+  },
+  {
+   "area": "CI",
+   "capability": "python",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED via local command executed by the qualification harness; exit 0; log sha256 92cfc0b75d826404; 819 passed, 3 skipped in 3043.71s (0:50:43)",
+   "reason": ""
+  },
+  {
+   "area": "CI",
+   "capability": "frontend",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED via local command executed by the qualification harness; exit 0; log sha256 ac2ca709a75893c9; Tests  40 passed (40)",
+   "reason": ""
+  },
+  {
+   "area": "CI",
+   "capability": "typecheck",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED via local command executed by the qualification harness; exit 0; log sha256 a3c9f01128312392; ",
+   "reason": ""
+  },
+  {
+   "area": "CI",
+   "capability": "build",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED via local command executed by the qualification harness; exit 0; log sha256 b42a57f232006c04; built in 507ms\u001b[39m",
+   "reason": ""
+  },
+  {
+   "area": "CI",
+   "capability": "npm audit",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED via local command executed by the qualification harness; exit 0; log sha256 6d8c5c8f3d7684ad; found 0 vulnerabilities",
+   "reason": ""
+  },
+  {
+   "area": "CI",
+   "capability": "GitHub Actions on the candidate",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "OBSERVED via GitHub REST API: repos/Soturine/drawlab/actions/runs?head_sha=<candidate> (fetched by the harness); runs 38490155831:success",
+   "reason": ""
+  },
+  {
+   "area": "OBSERVATORY",
+   "capability": "served bundle contains the League pages",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "built bundle under src/drawlab/web/static",
+   "reason": "the committed bundle lacks the League pages"
+  },
+  {
+   "area": "DERIVANTA",
+   "capability": "read-only use (worktree untouched)",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "HEAD 3578df707309, clean True",
+   "reason": "the Derivanta worktree was modified"
+  },
+  {
+   "area": "DERIVANTA",
+   "capability": "M7 review recorded against Derivanta criteria",
+   "scope": "ALL",
+   "state": "PASS",
+   "evidence": "docs/derivanta/AUDITS.md",
+   "reason": ""
+  }
+ ],
+ "facts": {
+  "protection": {
+   "state": "PROTECTED",
+   "allow_force_pushes": {
+    "enabled": false
+   },
+   "allow_deletions": {
+    "enabled": false
+   },
+   "required_linear_history": {
+    "enabled": true
+   },
+   "enforce_admins": {
+    "url": "https://api.github.com/repos/Soturine/drawlab-evidence/branches/main/protection/enforce_admins",
+    "enabled": true
+   }
+  },
+  "verifier": {
+   "verified": true,
+   "checked": {
+    "commitments never modified": 36,
+    "commitment hashes": 36,
+    "ledger chains": 1,
+    "ledgers append-only": 1,
+    "timing classes re-derived": 36,
+    "scores recomputed": 36,
+    "no league before a GO": 1,
+    "history vs official API": 9
+   },
+   "failures": [],
+   "not_independent": "ticket = frozen generator(history before target) needs DrawLab's code and its frozen fingerprints"
+  }
+ },
+ "gate_receipts": [
+  {
+   "gate": "github_ci",
+   "state": "OBSERVED",
+   "candidate": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+   "method": "GitHub REST API: repos/Soturine/drawlab/actions/runs?head_sha=<candidate> (fetched by the harness)",
+   "observed_at": "2026-10-14T01:36:58.156937+00:00",
+   "evidence": {
+    "repository": "Soturine/drawlab",
+    "workflow": "ci",
+    "runs": [
+     {
+      "id": 38490155831,
+      "event": "push",
+      "head_branch": "m7/prospective-league",
+      "head_sha": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-14T00:26:08Z",
+      "updated_at": "2026-10-14T00:40:23Z",
+      "html_url": "https://github.com/Soturine/drawlab/actions/runs/38490155831"
+     }
+    ],
+    "ignored_other_sha": []
+   },
+   "reason": "",
+   "receipt_version": "gate-observation-v1"
+  },
+  {
+   "gate": "python",
+   "state": "OBSERVED",
+   "candidate": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+   "method": "local command executed by the qualification harness",
+   "observed_at": "2026-10-14T01:36:58.955153+00:00",
+   "evidence": {
+    "command": [
+     "python",
+     "-m",
+     "pytest",
+     "-q",
+     "-p",
+     "no:cacheprovider",
+     "--basetemp=C:\\Users\\rafael\\SoturineLab\\drawlab\\artifacts\\qualification-m7\\M7Q-20261014T013658Z-c526d50d\\gates\\pytest-basetemp"
+    ],
+    "cwd": ".",
+    "tree_before": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    },
+    "exit_code": 0,
+    "duration_s": 3047.95,
+    "log": "C:\\Users\\rafael\\SoturineLab\\drawlab\\artifacts\\qualification-m7\\M7Q-20261014T013658Z-c526d50d\\gates\\python.log",
+    "log_sha256": "92cfc0b75d8264048610a75037743bbbc0c5d1cd3edf3eeaee56ccd6cf238695",
+    "summary": "819 passed, 3 skipped in 3043.71s (0:50:43)",
+    "tree_after": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    }
+   },
+   "reason": "",
+   "receipt_version": "gate-observation-v1"
+  },
+  {
+   "gate": "frontend",
+   "state": "OBSERVED",
+   "candidate": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+   "method": "local command executed by the qualification harness",
+   "observed_at": "2026-10-14T02:27:47.019415+00:00",
+   "evidence": {
+    "command": [
+     "npm.cmd",
+     "test"
+    ],
+    "cwd": "observatory",
+    "tree_before": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    },
+    "exit_code": 0,
+    "duration_s": 28.95,
+    "log": "C:\\Users\\rafael\\SoturineLab\\drawlab\\artifacts\\qualification-m7\\M7Q-20261014T013658Z-c526d50d\\gates\\frontend.log",
+    "log_sha256": "ac2ca709a75893c985b605fc05556c637f39cafb6d7bba53bb7ececfca01349a",
+    "summary": "Tests  40 passed (40)",
+    "tree_after": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    }
+   },
+   "reason": "",
+   "receipt_version": "gate-observation-v1"
+  },
+  {
+   "gate": "typecheck",
+   "state": "OBSERVED",
+   "candidate": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+   "method": "local command executed by the qualification harness",
+   "observed_at": "2026-10-14T02:28:16.073118+00:00",
+   "evidence": {
+    "command": [
+     "npm.cmd",
+     "run",
+     "typecheck"
+    ],
+    "cwd": "observatory",
+    "tree_before": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    },
+    "exit_code": 0,
+    "duration_s": 0.95,
+    "log": "C:\\Users\\rafael\\SoturineLab\\drawlab\\artifacts\\qualification-m7\\M7Q-20261014T013658Z-c526d50d\\gates\\typecheck.log",
+    "log_sha256": "a3c9f01128312392c1f26a5747278534f9c5bfa8b9f7a13667b2aec8965ba27e",
+    "summary": "",
+    "tree_after": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    }
+   },
+   "reason": "",
+   "receipt_version": "gate-observation-v1"
+  },
+  {
+   "gate": "build",
+   "state": "OBSERVED",
+   "candidate": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+   "method": "local command executed by the qualification harness",
+   "observed_at": "2026-10-14T02:28:17.131460+00:00",
+   "evidence": {
+    "command": [
+     "npm.cmd",
+     "run",
+     "build"
+    ],
+    "cwd": "observatory",
+    "tree_before": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    },
+    "exit_code": 0,
+    "duration_s": 3.09,
+    "log": "C:\\Users\\rafael\\SoturineLab\\drawlab\\artifacts\\qualification-m7\\M7Q-20261014T013658Z-c526d50d\\gates\\build.log",
+    "log_sha256": "b42a57f232006c04333fb8f178f47ebaa08ba809560febe82c80c0a2584a77a2",
+    "summary": "built in 507ms\u001b[39m",
+    "tree_after": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    }
+   },
+   "reason": "",
+   "receipt_version": "gate-observation-v1"
+  },
+  {
+   "gate": "npm_audit",
+   "state": "OBSERVED",
+   "candidate": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+   "method": "local command executed by the qualification harness",
+   "observed_at": "2026-10-14T02:28:20.383056+00:00",
+   "evidence": {
+    "command": [
+     "npm.cmd",
+     "audit",
+     "--omit=dev",
+     "--audit-level=high"
+    ],
+    "cwd": "observatory",
+    "tree_before": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    },
+    "exit_code": 0,
+    "duration_s": 10.89,
+    "log": "C:\\Users\\rafael\\SoturineLab\\drawlab\\artifacts\\qualification-m7\\M7Q-20261014T013658Z-c526d50d\\gates\\npm_audit.log",
+    "log_sha256": "6d8c5c8f3d7684adb070417bd608d01ae90aa3dc26a65af03ffda4955f38d9a3",
+    "summary": "found 0 vulnerabilities",
+    "tree_after": {
+     "head": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+     "dirty_paths": []
+    }
+   },
+   "reason": "",
+   "receipt_version": "gate-observation-v1"
+  }
+ ],
+ "head_after": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+ "tree_clean_after": true
+}

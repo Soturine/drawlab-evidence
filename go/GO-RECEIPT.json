@@ -1,0 +1,96 @@
+{
+ "authorized_by": "Soturine",
+ "candidate_revision": "c526d50d7d3389fc4a650662dcf4607ba023fbd9",
+ "decision": "GO",
+ "first_targets": {
+  "diadesorte": 1322,
+  "duplasena": 3020,
+  "lotofacil": 3804,
+  "lotomania": 2987,
+  "maismilionaria": 398,
+  "megasena": 3070,
+  "quina": 7142,
+  "supersete": 910,
+  "timemania": 2455
+ },
+ "observations_before_publication": {
+  "diadesorte": {
+   "latest": 1321,
+   "latest_body_sha256": "45c28ccc680959fd12bbe2628a82c286d7c0e5e764d2f4a5c6ecb72e870ca70b",
+   "provider_date": "Wed, 14 Oct 2026 05:02:20 GMT",
+   "target": 1322,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:21 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "duplasena": {
+   "latest": 3019,
+   "latest_body_sha256": "278b16e4d517f0350043af1e8e7ea38a6d3d056442530713c99cdda8a9d2f30d",
+   "provider_date": "Wed, 14 Oct 2026 05:02:22 GMT",
+   "target": 3020,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:23 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "lotofacil": {
+   "latest": 3803,
+   "latest_body_sha256": "46bdd49d424fdcfdcaa2870d7ef89c59d02f687b82c4643793d4828c28890a3b",
+   "provider_date": "Wed, 14 Oct 2026 05:02:24 GMT",
+   "target": 3804,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:25 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "lotomania": {
+   "latest": 2986,
+   "latest_body_sha256": "adae9160c09bd7b725d4c3ba25e5bc44927713f40ef9b9a4f1f1db7f78245ab8",
+   "provider_date": "Wed, 14 Oct 2026 05:02:27 GMT",
+   "target": 2987,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:28 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "maismilionaria": {
+   "latest": 397,
+   "latest_body_sha256": "b4acda3ff32aff6058c61d5aeee7b6edc9f488d741a57c23f11b0a202c2f4549",
+   "provider_date": "Wed, 14 Oct 2026 05:02:30 GMT",
+   "target": 398,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:31 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "megasena": {
+   "latest": 3069,
+   "latest_body_sha256": "0fbfa97f4ed6ca9e0d37b77a2c5889c16bcaa871a23ec6df6cec90da3b4f1d9d",
+   "provider_date": "Wed, 14 Oct 2026 05:02:32 GMT",
+   "target": 3070,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:33 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "quina": {
+   "latest": 7141,
+   "latest_body_sha256": "63aa46470d6188b0eee95f7889e307b5846a19d7baf6a20c68b27d3f91e3896a",
+   "provider_date": "Wed, 14 Oct 2026 05:02:35 GMT",
+   "target": 7142,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:36 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "supersete": {
+   "latest": 909,
+   "latest_body_sha256": "c78890ffa7b8d28480be9513c09ddc851da831f7934b80a160a8e9b3b8fade9b",
+   "provider_date": "Wed, 14 Oct 2026 05:02:38 GMT",
+   "target": 910,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:38 GMT",
+   "target_state": "NOT_PUBLISHED"
+  },
+  "timemania": {
+   "latest": 2454,
+   "latest_body_sha256": "f57bc1ea0566c92d8d41a48edf51347c496dbbe4bb22e9655758f0bf5e2274ec",
+   "provider_date": "Wed, 14 Oct 2026 05:02:40 GMT",
+   "target": 2455,
+   "target_provider_date": "Wed, 14 Oct 2026 05:02:41 GMT",
+   "target_state": "NOT_PUBLISHED"
+  }
+ },
+ "preregistration_sha256": "a2b169669ccaf251e5fed7036a4a2186baeef066a79980e0928e53d608bc5e0e",
+ "protocol_id": "M7-PROTOCOL-v1",
+ "protocol_sha256": "f7d79c5fd130766b82b08f2798adacf8dc36933dabda72acb2a32b066d6627a4",
+ "qualification_id": "M7Q-20261014T013658Z-c526d50d",
+ "qualification_sha256": "3436680b44aa6a2f7c4529817e16f869d8511dfe199eff6f30098a2e9dafb6f3",
+ "schema": "m7-go-receipt-v1"
+}
